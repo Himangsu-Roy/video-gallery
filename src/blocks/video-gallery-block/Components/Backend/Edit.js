@@ -31,35 +31,35 @@ const Edit = (props) => {
     currentPostType,
   );
 
-  useEffect(() => {
-    // vgbpipecheck is a global variable injected by PHP
-    if (
-      typeof vgbpipecheck !== "undefined" &&
-      !vgbpipecheck &&
-      isGalleryPostType &&
-      !isSetup
-    ) {
-      setAttributes({ isSetup: true });
-    }
-  }, [vgbpipecheck, isGalleryPostType, isSetup]);
+  // useEffect(() => {
+  //   // vgbpipecheck is a global variable injected by PHP
+  //   if (
+  //     typeof vgbpipecheck !== "undefined" &&
+  //     !vgbpipecheck &&
+  //     isGalleryPostType &&
+  //     !isSetup
+  //   ) {
+  //     setAttributes({ isSetup: true });
+  //   }
+  // }, [vgbpipecheck, isGalleryPostType, isSetup]);
 
-  if (isGalleryPostType && !isSetup) {
-    return (
-      <div {...blockProps}>
-        {isGalleryPostType && (
-          <FrontShortCode
-            postType={currentPostType}
-            shortCode={`[video_gallery id=${currentPostId}]`}
-          />
-        )}
-        <SetupUI
-          clientId={clientId}
-          setAttributes={setAttributes}
-          currentPostType={currentPostType}
-        />
-      </div>
-    );
-  }
+  // if (isGalleryPostType && !isSetup) {
+  //   return (
+  //     <div {...blockProps}>
+  //       {isGalleryPostType && (
+  //         <FrontShortCode
+  //           postType={currentPostType}
+  //           shortCode={`[video_gallery id=${currentPostId}]`}
+  //         />
+  //       )}
+  //       <SetupUI
+  //         clientId={clientId}
+  //         setAttributes={setAttributes}
+  //         currentPostType={currentPostType}
+  //       />
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

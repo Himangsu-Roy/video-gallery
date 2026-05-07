@@ -12,7 +12,6 @@ import {
   videoSliderIcon,
   testimonialIcon,
 } from "../../../../Components/Common/utils/icons";
-import { isBlockEnabled } from "../../../../Components/Common/utils/functions";
 
 const SetupUI = ({ clientId, setAttributes, currentPostType }) => {
   const { replaceBlock, updateSettings } = useDispatch("core/block-editor");

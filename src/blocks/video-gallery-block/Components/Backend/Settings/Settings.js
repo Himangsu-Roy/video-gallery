@@ -116,7 +116,7 @@ const Settings = ({
                     docsLink="https://bblockswp.com/docs/video-gallery-block"
                   />
 
-                  {isGalleryPostType && (
+                  {/* {isGalleryPostType && (
                     <div className="bPlInspectorInfo">
                       <FrontShortCode
                         postType={currentPostType}
@@ -124,7 +124,7 @@ const Settings = ({
                         stacked={true}
                       />
                     </div>
-                  )}
+                  )} */}
 
                   <PanelBody
                     className="bPlPanelBody addRemoveItems"

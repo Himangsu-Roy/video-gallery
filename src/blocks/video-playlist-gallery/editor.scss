@@ -1,0 +1,44 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-b-blocks-test-purpose {
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+
+
+// .components-dropdown-menu__popover
+//   .components-popover__content
+//   .components-dropdown-menu__menu
+//   .components-menu-group
+//   [type="button"]:first-child {
+//   display: none;
+// }
+
+// .components-popover.components-dropdown__content.components-dropdown-menu__popover.is-positioned
+//   .components-popover__content
+//   .components-menu-group
+//   .components-button.components-menu-item__button.components-menu-items-choice {
+//   display: flex;
+//   align-items: center;
+// }
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+  .block-editor-block-icon {
+    svg {
+      fill: #fff !important;
+      stroke: #fff !important;
+    }
+  }
+}

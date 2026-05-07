@@ -1,0 +1,532 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "vgblk/parallax-row-video-gallery",
+  "version": "1.0.0",
+  "title": "Parallax Row Video Gallery",
+  "category": "videoblocks",
+  "description": "Creates stunning parallax rows with embedded video galleries for dynamic, modern page layouts.",
+  "keywords": [
+    "Parallax Row Video Gallery",
+    "Parallax",
+    "Row",
+    "Video",
+    "Gallery",
+    "Video Gallery",
+    "Video Grid"
+  ],
+  "textdomain": "video-gallery",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "albums": {
+      "type": "array",
+      "default": []
+    },
+    "videos": {
+      "type": "array",
+      "default": [
+        [
+          {
+            "id": "pachinko",
+            "video": "https://www.pexels.com/download/video/34394664/",
+            "poster": "https://images.pexels.com/photos/30234047/pexels-photo-30234047.jpeg",
+            "title": "Title One",
+            "subtitle": "Subtitle One"
+          },
+          {
+            "id": "usher",
+            "video": "https://www.pexels.com/download/video/17639418/",
+            "poster": "https://images.pexels.com/photos/25185919/pexels-photo-25185919.jpeg",
+            "title": "Title Two",
+            "subtitle": "Subtitle Two"
+          },
+          {
+            "id": "documentary",
+            "video": "https://www.pexels.com/video/a-path-in-the-woods-with-leaves-on-the-ground-15215153/",
+            "poster": "https://images.pexels.com/photos/7364559/pexels-photo-7364559.jpeg",
+            "title": "Title Three",
+            "subtitle": "Subtitle Three"
+          },
+          {
+            "id": "presumed",
+            "video": "https://www.pexels.com/download/video/30401710/",
+            "poster": "https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg",
+            "title": "Title Four",
+            "subtitle": "Subtitle Four"
+          },
+          {
+            "id": "maritime",
+            "video": "https://www.pexels.com/download/video/33766878/",
+            "poster": "https://images.pexels.com/photos/8034468/pexels-photo-8034468.jpeg",
+            "title": "Title Five",
+            "subtitle": "Subtitle Five"
+          },
+          {
+            "id": "phoenix",
+            "video": "https://www.pexels.com/download/video/16704982/",
+            "poster": "https://images.pexels.com/photos/29705626/pexels-photo-29705626.jpeg",
+            "title": "Title Six",
+            "subtitle": "Subtitle Six"
+          }
+        ],
+        [
+          {
+            "id": "jennifer",
+            "video": "https://www.pexels.com/download/video/2875430/",
+            "poster": "https://images.pexels.com/photos/1366088/pexels-photo-1366088.jpeg",
+            "title": "Title One",
+            "subtitle": "Subtitle One"
+          },
+          {
+            "id": "angrybirds",
+            "video": "https://www.pexels.com/download/video/855687/",
+            "poster": "https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg",
+            "title": "Title Two",
+            "subtitle": "Subtitle Two"
+          },
+          {
+            "id": "western",
+            "video": "https://www.pexels.com/download/video/13831201/",
+            "poster": "https://images.pexels.com/photos/35646001/pexels-photo-35646001.jpeg",
+            "title": "Title Three",
+            "subtitle": "Subtitle Three"
+          },
+          {
+            "id": "icespice",
+            "video": "https://www.pexels.com/download/video/31267759/",
+            "poster": "https://images.pexels.com/photos/11562252/pexels-photo-11562252.jpeg",
+            "title": "Title Four",
+            "subtitle": "Subtitle Four"
+          },
+          {
+            "id": "dreamlight",
+            "video": "https://www.pexels.com/download/video/16343663/",
+            "poster": "https://images.pexels.com/photos/16089235/pexels-photo-16089235.jpeg",
+            "title": "Title Five",
+            "subtitle": "Subtitle Five"
+          },
+          {
+            "id": "badboys",
+            "video": "https://www.pexels.com/download/video/6520516/",
+            "poster": "https://images.pexels.com/photos/30750520/pexels-photo-30750520.jpeg",
+            "title": "Title Six",
+            "subtitle": "Subtitle Six"
+          }
+        ],
+        [
+          {
+            "id": "drama",
+            "video": "https://www.pexels.com/download/video/16704982/",
+            "poster": "https://images.pexels.com/photos/29705626/pexels-photo-29705626.jpeg",
+            "title": "Title One",
+            "subtitle": "Subtitle One"
+          },
+          {
+            "id": "animated",
+            "video": "https://www.pexels.com/download/video/34394664/",
+            "poster": "https://images.pexels.com/photos/30234047/pexels-photo-30234047.jpeg",
+            "title": "Title Two",
+            "subtitle": "Subtitle Two"
+          },
+          {
+            "id": "horror",
+            "video": "https://www.pexels.com/download/video/13831201/",
+            "poster": "https://images.pexels.com/photos/35646001/pexels-photo-35646001.jpeg",
+            "title": "Title Three",
+            "subtitle": "Subtitle Three"
+          },
+          {
+            "id": "family",
+            "video": "https://www.pexels.com/download/video/15215153/",
+            "poster": "https://images.pexels.com/photos/7364559/pexels-photo-7364559.jpeg",
+            "title": "Title Four",
+            "subtitle": "Subtitle Four"
+          },
+          {
+            "id": "silo",
+            "video": "https://www.pexels.com/download/video/30401710/",
+            "poster": "https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg",
+            "title": "Title Five",
+            "subtitle": "Subtitle Five"
+          },
+          {
+            "id": "music",
+            "video": "https://www.pexels.com/download/video/31267759/",
+            "poster": "https://images.pexels.com/photos/11562252/pexels-photo-11562252.jpeg",
+            "title": "Title Six",
+            "subtitle": "Subtitle Six"
+          }
+        ]
+      ]
+    },
+    "gallery": {
+      "type": "object",
+      "default": {
+        "background": {
+          "show": true,
+          "color": "#000"
+        },
+        "padding": {
+          "desktop": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 0,
+          "style": "solid"
+        },
+        "borderRadius": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          }
+        },
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "0px",
+            "blur": "0px",
+            "spreed": "0px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "columns": {
+          "desktop": 0,
+          "tablet": 3,
+          "mobile": 1
+        },
+        "columnGap": {
+          "desktop": 16,
+          "tablet": 15,
+          "mobile": 15
+        },
+        "rowGap": {
+          "desktop": 0,
+          "tablet": 0,
+          "mobile": 0
+        },
+        "orientation": "horizontal"
+      }
+    },
+    "items": {
+      "type": "object",
+      "default": {
+        "hoverScaleEffect": 1.05,
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "4px",
+            "blur": "12px",
+            "spreed": "0px",
+            "color": "#0000004d",
+            "isInset": false
+          }
+        ],
+        "hoverShadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "20px",
+            "blur": "25px",
+            "spreed": "-5px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "playBtn": {
+          "show": true,
+          "bgColor": "rgba(255, 255, 255, 0.2)",
+          "bgHoverColor": "rgba(255, 255, 255, 0.3)",
+          "iconStrokeColor": "#fff",
+          "iconFillColor": "#FFFFFF00",
+          "blur": "6px",
+          "size": {
+            "desktop": "4rem",
+            "tablet": "4rem",
+            "mobile": "4rem"
+          },
+          "iconSize": {
+            "desktop": "2rem",
+            "tablet": "2rem",
+            "mobile": "2rem"
+          },
+          "borderRadius": {
+            "top": "50%",
+            "right": "50%",
+            "left": "50%",
+            "bottom": "50%"
+          },
+
+          "scaleEffect": 1.1,
+          "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg>"
+        },
+        "controls": {
+          "show": true,
+          "bgColor": "rgba(0, 0, 0, 0.5)",
+          "bgHoverColor": "rgba(0, 0, 0, 0.7)",
+          "iconStrokeColor": "#fff",
+          "iconFillColor": "#FFFFFF00",
+          "blur": "6px",
+          "position": {
+            "vertical": {
+              "desktop": "1rem",
+              "tablet": "1rem",
+              "mobile": "1rem"
+            },
+            "horizontal": {
+              "desktop": "1rem",
+              "tablet": "1rem",
+              "mobile": "1rem"
+            }
+          },
+          "direction": "row",
+          "size": {
+            "desktop": "2rem",
+            "tablet": "2rem",
+            "mobile": "2rem"
+          },
+          "iconSize": {
+            "desktop": "1rem",
+            "tablet": "1rem",
+            "mobile": "1rem"
+          },
+          "borderRadius": {
+            "top": "50%",
+            "right": "50%",
+            "left": "50%",
+            "bottom": "50%"
+          },
+          "gap": {
+            "desktop": "0.5rem",
+            "tablet": "0.5rem",
+            "mobile": "0.5rem"
+          },
+          "progress": {
+            "height": "4px",
+            "bgColor": "rgba(255, 255, 255, 0.2)",
+            "barColor": "#fff"
+          }
+        },
+        "overlayColor": "rgba(0, 0, 0, 0.4)",
+        "bottomOverlayColor": "rgba(0, 0, 0, 0.8)",
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 1,
+          "style": "solid"
+        },
+
+        "borderRadius": {
+          "desktop": {
+            "top": "12px",
+            "right": "12px",
+            "left": "12px",
+            "bottom": "12px"
+          },
+          "tablet": {
+            "top": "12px",
+            "right": "12px",
+            "left": "12px",
+            "bottom": "12px"
+          },
+          "mobile": {
+            "top": "12px",
+            "right": "12px",
+            "left": "12px",
+            "bottom": "12px"
+          }
+        },
+        "info": {
+          "title": {
+            "show": true,
+            "color": "#fff",
+            "typography": {
+              "fontSize": {
+                "desktop": 18,
+                "tablet": 18,
+                "mobile": 18
+              },
+              "fontWeight": "600",
+              "lineHeight": 1.2
+            },
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "bottom": "4px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "bottom": "4px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "bottom": "4px",
+                "left": "0px",
+                "right": "0px"
+              }
+            }
+          },
+          "subtitle": {
+            "show": true,
+            "color": "#d1d5db",
+            "typography": {
+              "fontSize": {
+                "desktop": 14,
+                "tablet": 14,
+                "mobile": 14
+              },
+              "fontWeight": "500",
+              "lineHeight": 1
+            },
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+              }
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "tablet": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "mobile": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            }
+          },
+          "textShadow": [
+            {
+              "hOffset": "0px",
+              "vOffset": "1px",
+              "blur": "4px",
+              "color": "rgba(0, 0, 0, 0.8)"
+            }
+          ]
+        },
+        "padding": {
+          "desktop": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "gap": {
+          "desktop": "16px",
+          "tablet": "16px",
+          "mobile": "16px"
+        },
+        "video": {
+          "objectFit": "cover",
+          "lightbox": true,
+          "minWidth": {
+            "desktop": "260px",
+            "tablet": "260px",
+            "mobile": "260px"
+          },
+          "maxWidth": {
+            "desktop": "none",
+            "tablet": "none",
+            "mobile": "none"
+          },
+          "height": {
+            "desktop": "160px",
+            "tablet": "160px",
+            "mobile": "160px"
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:../index.js",
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

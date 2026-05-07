@@ -1,0 +1,4169 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-gallery-block/editor.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+.vgb-setup-ui {
+  background: #146ef5;
+  padding: 60px 40px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.vgb-setup-ui .vgb-setup-header {
+  margin-bottom: 40px;
+}
+.vgb-setup-ui .vgb-setup-header h2 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.vgb-setup-ui .vgb-setup-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.vgb-setup-ui .vgb-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+.vgb-setup-ui .vgb-setup-grid:has(.vgb-setup-item:only-child) {
+  grid-template-columns: 1fr;
+  max-width: 400px;
+}
+.vgb-setup-ui .vgb-setup-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  color: #1a1a1b;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s, all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.vgb-setup-ui .vgb-setup-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.vgb-setup-ui .vgb-setup-item .vgb-setup-icon {
+  margin-bottom: 15px;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-setup-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #146ef5;
+  transition: transform 0.2s;
+}
+.vgb-setup-ui .vgb-setup-item:hover .vgb-setup-icon svg {
+  transform: scale(1.1);
+}
+.vgb-setup-ui .vgb-setup-item .vgb-setup-content {
+  flex-grow: 1;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-setup-content h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #1a1a1b;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-setup-content p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-new-tag,
+.vgb-setup-ui .vgb-setup-item .vgb-pro-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-new-tag {
+  background: #00a32a;
+}
+.vgb-setup-ui .vgb-setup-item .vgb-pro-tag {
+  background: #ff7a00;
+}
+.vgb-setup-ui .vgb-setup-footer {
+  margin-top: 40px;
+  text-align: center;
+  animation: slideUp 0.3s ease-out;
+}
+.vgb-setup-ui .vgb-add-new-gallery-btn {
+  background: #fff;
+  color: #146ef5;
+  border: 2px solid #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.vgb-setup-ui .vgb-add-new-gallery-btn:hover {
+  background: transparent;
+  color: #fff;
+  transform: scale(1.05);
+}
+.vgb-setup-ui .vgb-add-new-gallery-btn:active {
+  transform: scale(0.98);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .vgb-setup-ui {
+    padding: 40px 20px;
+  }
+  .vgb-setup-ui .vgb-setup-header h2 {
+    font-size: 28px;
+  }
+  .vgb-setup-ui .vgb-setup-header p {
+    font-size: 16px;
+  }
+  .vgb-setup-ui .vgb-setup-grid {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    row-gap: 12px;
+  }
+  .vgb-setup-ui .vgb-setup-grid:has(.vgb-setup-item:only-child) {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .vgb-setup-ui .vgb-setup-grid {
+    grid-template-columns: 1fr;
+  }
+  .vgb-setup-ui .vgb-setup-item {
+    padding: 16px;
+  }
+  .vgb-setup-ui .vgb-setup-item .vgb-setup-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  .vgb-setup-ui .vgb-setup-item .vgb-setup-content h3 {
+    font-size: 16px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+svg.bPlBlockIcon {
+  fill: #146EF5 !important;
+}
+
+.block-editor-autocompleters__block.is-selected svg.bPlBlockIcon,
+.block-editor-list-view-leaf.is-selected svg.bPlBlockIcon {
+  fill: #fff !important;
+}
+
+.edit-post-visual-editor .editor-styles-wrapper {
+  max-width: inherit !important;
+}
+
+.block-editor-block-list__block[data-align=full],
+.wp-block[data-align=full] {
+  max-width: 100% !important;
+}
+
+.gap0 {
+  gap: 0 !important;
+}
+
+.gap3 {
+  gap: 3px !important;
+}
+
+.gap5 {
+  gap: 5px !important;
+}
+
+.gap10 {
+  gap: 10px !important;
+}
+
+.gap15 {
+  gap: 15px !important;
+}
+
+.gap20 {
+  gap: 20px !important;
+}
+
+.gap35 {
+  gap: 35px !important;
+}
+
+.mt0 {
+  margin-top: 0px !important;
+}
+
+.mt3 {
+  margin-top: 3px !important;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mt35 {
+  margin-top: 35px !important;
+}
+
+.mb0 {
+  margin-bottom: 0px !important;
+}
+
+.mb3 {
+  margin-bottom: 3px !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.mb35 {
+  margin-bottom: 35px !important;
+}
+
+.bPlNowEditing {
+  outline: 2px solid #146EF5;
+}
+
+.bPlInspectorInfo {
+  padding: 6px;
+}
+.bPlInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.bPlInspectorInfo .onSale {
+  font-size: 16px;
+  color: #007fff;
+  padding: 5px;
+}
+.bPlInspectorInfo .onSale * {
+  color: inherit;
+}
+.bPlInspectorInfo .onSale strong {
+  font-weight: bold;
+}
+
+.bPlTabPanel .components-tab-panel__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.bPlTabPanel .components-tab-panel__tabs button {
+  color: #146EF5;
+  width: 50%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+.bPlTabPanel .components-tab-panel__tabs button:hover, .bPlTabPanel .components-tab-panel__tabs button:focus {
+  color: #146EF5;
+  box-shadow: none;
+}
+.bPlTabPanel .components-tab-panel__tabs .activeTab {
+  font-weight: bold;
+  background-color: rgba(20, 110, 245, 0.15);
+  border-bottom: 3px solid #FF7A00;
+}
+.bPlTabPanel.bPlAutoTab .components-tab-panel__tabs button {
+  width: auto;
+}
+.bPlTabPanel.small .components-tab-panel__tabs button, .bPlTabPanel.mini .components-tab-panel__tabs button {
+  height: 30px !important;
+  text-transform: capitalize;
+  justify-content: center;
+  border-bottom: 0px;
+  border: 1px solid #146EF5;
+  white-space: nowrap;
+}
+.bPlTabPanel.small .components-tab-panel__tabs button:hover, .bPlTabPanel.mini .components-tab-panel__tabs button:hover {
+  background-color: #FF7A00;
+  color: #fff;
+}
+.bPlTabPanel.small .components-tab-panel__tabs button:focus, .bPlTabPanel.mini .components-tab-panel__tabs button:focus {
+  color: #146EF5;
+  background-color: rgba(20, 110, 245, 0.15);
+}
+.bPlTabPanel.small .components-tab-panel__tabs .activeTab,
+.bPlTabPanel.small .components-tab-panel__tabs .activeTab:focus, .bPlTabPanel.mini .components-tab-panel__tabs .activeTab,
+.bPlTabPanel.mini .components-tab-panel__tabs .activeTab:focus {
+  color: #fff;
+  background-color: #146EF5;
+}
+.bPlTabPanel.mini .components-tab-panel__tabs button {
+  height: 25px;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.components-button.has-icon .dashicon {
+  margin: 0;
+}
+
+.bPlToolbar .dashicon {
+  font-size: 23px;
+}
+
+.bPlDropdown .dashicon {
+  margin-right: 0 !important;
+}
+
+.bPlDropdownPopover {
+  min-width: 280px;
+  height: auto;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.bPlDropdownPopover .components-popover__content {
+  min-width: 280px;
+  margin-right: -35px !important;
+  margin-top: -8px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0 3px 15px 0 #5495f8;
+  border-radius: 5px;
+}
+.bPlDropdownPopover .dashicon {
+  margin-right: 0 !important;
+}
+
+.bPlPanelBody label,
+.bPlDropdownPopover .components-popover__content label {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-transform: unset !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bPlPanelBody label .labelPro,
+.bPlDropdownPopover .components-popover__content label .labelPro {
+  margin-left: auto;
+}
+.bPlPanelBody .helpTooltip,
+.bPlDropdownPopover .components-popover__content .helpTooltip {
+  width: 1.5em;
+  max-width: 20px;
+  height: 1.5em;
+  max-height: 20px;
+  cursor: help;
+}
+.bPlPanelBody .components-notice,
+.bPlDropdownPopover .components-popover__content .components-notice {
+  margin: 0;
+}
+.bPlPanelBody .components-notice.is-dismissible,
+.bPlDropdownPopover .components-popover__content .components-notice.is-dismissible {
+  position: relative;
+  padding-right: 36px;
+}
+.bPlPanelBody .components-notice.is-dismissible .components-notice__dismiss,
+.bPlDropdownPopover .components-popover__content .components-notice.is-dismissible .components-notice__dismiss {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bPlPanelBody .components-notice .components-notice__content,
+.bPlDropdownPopover .components-popover__content .components-notice .components-notice__content {
+  margin: 0;
+}
+.bPlPanelBody hr,
+.bPlDropdownPopover .components-popover__content hr {
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  margin: 20px 0;
+}
+.bPlPanelBody.components-panel__body .components-base-control__field,
+.bPlDropdownPopover .components-popover__content.components-panel__body .components-base-control__field {
+  padding: 0;
+}
+.bPlPanelBody .components-unit-control-wrapper .components-unit-control__select,
+.bPlPanelBody .components-input-control__suffix .components-unit-control__unit-label,
+.bPlDropdownPopover .components-popover__content .components-unit-control-wrapper .components-unit-control__select,
+.bPlDropdownPopover .components-popover__content .components-input-control__suffix .components-unit-control__unit-label {
+  text-align: center;
+  font-size: 11px !important;
+  width: 25px !important;
+  color: #fff !important;
+  background-color: #146EF5 !important;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.bPlPanelBody .components-checkbox-control .components-base-control__field,
+.bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field {
+  display: flex;
+}
+.bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox],
+.bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox] {
+  border-radius: 4px;
+  border-color: #146EF5;
+}
+.bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:checked,
+.bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:checked {
+  background-color: #FF7A00;
+  border-color: #146EF5;
+}
+.bPlPanelBody .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:focus,
+.bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field .components-checkbox-control__input[type=checkbox]:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #146EF5;
+}
+.bPlPanelBody .components-checkbox-control .components-base-control__field label,
+.bPlDropdownPopover .components-popover__content .components-checkbox-control .components-base-control__field label {
+  margin-right: 0;
+}
+.bPlPanelBody .components-base-control.css-wdf2ti-Wrapper,
+.bPlDropdownPopover .components-popover__content .components-base-control.css-wdf2ti-Wrapper {
+  margin-bottom: 0 !important;
+}
+.bPlPanelBody .components-toggle-control label,
+.bPlDropdownPopover .components-popover__content .components-toggle-control label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+.bPlPanelBody .components-form-toggle .components-form-toggle__track,
+.bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__track {
+  border: 1px solid #0749ab;
+}
+.bPlPanelBody .components-form-toggle.is-checked .components-form-toggle__track,
+.bPlDropdownPopover .components-popover__content .components-form-toggle.is-checked .components-form-toggle__track {
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-form-toggle .components-form-toggle__input:focus + .components-form-toggle__track,
+.bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__input:focus + .components-form-toggle__track {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #05347a;
+}
+.bPlPanelBody .components-form-toggle .components-form-toggle__thumb,
+.bPlDropdownPopover .components-popover__content .components-form-toggle .components-form-toggle__thumb {
+  background-color: #146EF5;
+  border-color: #146EF5;
+}
+.bPlPanelBody .components-form-toggle.is-checked .components-form-toggle__thumb,
+.bPlDropdownPopover .components-popover__content .components-form-toggle.is-checked .components-form-toggle__thumb {
+  background-color: #fff;
+}
+.bPlPanelBody .components-range-control__root,
+.bPlDropdownPopover .components-popover__content .components-range-control__root {
+  align-items: center !important;
+}
+.bPlPanelBody .components-range-control__root .css-19yq0mf-BeforeIconWrapper,
+.bPlDropdownPopover .components-popover__content .components-range-control__root .css-19yq0mf-BeforeIconWrapper {
+  margin: 0 !important;
+}
+.bPlPanelBody .components-range-control__root > span,
+.bPlDropdownPopover .components-popover__content .components-range-control__root > span {
+  margin-top: 0;
+}
+.bPlPanelBody .components-range-control__wrapper .components-range-control__track,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__track {
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-range-control__wrapper .css-5p7d2w-ThumbWrapper,
+.bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .css-5p7d2w-ThumbWrapper,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__thumb-wrapper {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+}
+.bPlPanelBody .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *,
+.bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper > *,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__thumb-wrapper > * {
+  background-color: #FF7A00;
+  border: 1px solid #FF7A00;
+}
+.bPlPanelBody .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *::before,
+.bPlPanelBody .components-range-control__wrapper .components-range-control__thumb-wrapper > *::before,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .css-5p7d2w-ThumbWrapper > *::before,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__thumb-wrapper > *::before {
+  background-color: #FF7A00;
+}
+.bPlPanelBody .components-range-control__wrapper .components-range-control__tooltip,
+.bPlDropdownPopover .components-popover__content .components-range-control__wrapper .components-range-control__tooltip {
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-radio-control__option,
+.bPlDropdownPopover .components-popover__content .components-radio-control__option {
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.bPlPanelBody .components-radio-control__option:last-child,
+.bPlDropdownPopover .components-popover__content .components-radio-control__option:last-child {
+  margin-right: 0;
+}
+.bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio],
+.bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio] {
+  border: 1px solid #146EF5;
+}
+.bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio]:checked,
+.bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio]:checked {
+  background-color: #146EF5;
+  border-color: #146EF5;
+}
+.bPlPanelBody .components-radio-control__option .components-radio-control__input[type=radio]:focus,
+.bPlDropdownPopover .components-popover__content .components-radio-control__option .components-radio-control__input[type=radio]:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #146EF5;
+}
+.bPlPanelBody .components-radio-control__option label,
+.bPlDropdownPopover .components-popover__content .components-radio-control__option label {
+  margin-right: 0;
+  margin-bottom: 1px;
+}
+.bPlPanelBody .components-circular-option-picker .components-circular-option-picker__swatches,
+.bPlDropdownPopover .components-popover__content .components-circular-option-picker .components-circular-option-picker__swatches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0;
+}
+.bPlPanelBody .components-circular-option-picker .components-circular-option-picker__swatches .components-circular-option-picker__option-wrapper,
+.bPlDropdownPopover .components-popover__content .components-circular-option-picker .components-circular-option-picker__swatches .components-circular-option-picker__option-wrapper {
+  margin: 0 !important;
+}
+.bPlPanelBody .components-circular-option-picker .components-custom-gradient-picker .components-custom-gradient-picker__gradient-bar,
+.bPlDropdownPopover .components-popover__content .components-circular-option-picker .components-custom-gradient-picker .components-custom-gradient-picker__gradient-bar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bPlPanelBody .components-circular-option-picker .components-custom-gradient-picker .components-custom-gradient-picker__ui-line,
+.bPlDropdownPopover .components-popover__content .components-circular-option-picker .components-custom-gradient-picker .components-custom-gradient-picker__ui-line {
+  margin-bottom: 0;
+}
+.bPlPanelBody .components-input-control,
+.bPlDropdownPopover .components-popover__content .components-input-control {
+  height: auto;
+}
+.bPlPanelBody .components-datetime .components-datetime__time-field input:focus,
+.bPlPanelBody .components-datetime .components-datetime__time-field select:focus,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field input:focus,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field select:focus {
+  border-color: #146EF5;
+  box-shadow: none;
+  outline: 1px solid #FF7A00 !important;
+}
+.bPlPanelBody .components-datetime .components-datetime__time-field select:hover,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__time-field select:hover {
+  color: #146EF5;
+}
+.bPlPanelBody .components-datetime .components-button,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-button {
+  color: #146EF5;
+  border: 1px solid #FF7A00;
+  box-shadow: none;
+  padding: 6px 10.5px;
+}
+.bPlPanelBody .components-datetime .components-button:hover,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-button:hover {
+  color: #146EF5;
+}
+.bPlPanelBody .components-datetime .components-button.is-primary,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary {
+  color: #fff;
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-datetime .components-button.is-primary:hover,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary:hover {
+  background-color: #FF7A00 !important;
+}
+.bPlPanelBody .components-datetime .components-button.is-primary:focus,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-button.is-primary:focus {
+  outline: 1px solid #FF7A00 !important;
+}
+.bPlPanelBody .components-datetime .components-datetime__timezone,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__timezone {
+  text-decoration: none;
+}
+.bPlPanelBody .components-datetime .components-datetime__date .DayPickerNavigation_button__horizontalDefault:focus,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .DayPickerNavigation_button__horizontalDefault:focus {
+  border-color: #146EF5;
+  box-shadow: 0 0 0 1px #146EF5;
+}
+.bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__default:hover,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__default:hover {
+  background-color: rgba(20, 110, 245, 0.15);
+}
+.bPlPanelBody .components-datetime .components-datetime__date .CalendarDay:focus,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay:focus {
+  box-shadow: inset 0 0 0 2px #146EF5, inset 0 0 0 3px #fff;
+}
+.bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__selected,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__selected {
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-datetime .components-datetime__date .CalendarDay__selected:hover,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__date .CalendarDay__selected:hover {
+  background-color: #146EF5;
+}
+.bPlPanelBody .components-datetime .components-datetime__buttons button,
+.bPlDropdownPopover .components-popover__content .components-datetime .components-datetime__buttons button {
+  text-decoration: none;
+}
+.bPlPanelBody .components-base-control,
+.bPlDropdownPopover .components-popover__content .components-base-control {
+  margin-bottom: 0 !important;
+}
+.bPlPanelBody .bPlLabel,
+.bPlPanelBody .components-unit-control-wrapper label,
+.bPlPanelBody .components-input-control__label,
+.bPlPanelBody .components-number-control label,
+.bPlDropdownPopover .components-popover__content .bPlLabel,
+.bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label,
+.bPlDropdownPopover .components-popover__content .components-input-control__label,
+.bPlDropdownPopover .components-popover__content .components-number-control label {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 0 !important;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.bPlPanelBody .bPlLabel .labelPro,
+.bPlPanelBody .components-unit-control-wrapper label .labelPro,
+.bPlPanelBody .components-input-control__label .labelPro,
+.bPlPanelBody .components-number-control label .labelPro,
+.bPlDropdownPopover .components-popover__content .bPlLabel .labelPro,
+.bPlDropdownPopover .components-popover__content .components-unit-control-wrapper label .labelPro,
+.bPlDropdownPopover .components-popover__content .components-input-control__label .labelPro,
+.bPlDropdownPopover .components-popover__content .components-number-control label .labelPro {
+  margin-left: auto;
+}
+.bPlPanelBody .bPlResetVal,
+.bPlDropdownPopover .components-popover__content .bPlResetVal {
+  min-width: 20px !important;
+  height: 20px;
+  padding: 0 5px !important;
+}
+.bPlPanelBody .bPlResetVal .dashicon,
+.bPlDropdownPopover .components-popover__content .bPlResetVal .dashicon {
+  width: 17px;
+  height: 17px;
+  font-size: 17px;
+}
+.bPlPanelBody .bPlBtnGroup .components-button,
+.bPlPanelBody .bPlBtnGroup .is-primary,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary {
+  border: 1px solid #05347a;
+  box-shadow: none;
+  padding: 6px 10.5px;
+}
+.bPlPanelBody .bPlBtnGroup .components-button > span,
+.bPlPanelBody .bPlBtnGroup .is-primary > span,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button > span,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary > span {
+  display: flex;
+}
+.bPlPanelBody .bPlBtnGroup .components-button:hover,
+.bPlPanelBody .bPlBtnGroup .is-primary:hover,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button:hover,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:hover {
+  color: #fff;
+  background-color: #FF7A00;
+}
+.bPlPanelBody .bPlBtnGroup .components-button .dashicon,
+.bPlPanelBody .bPlBtnGroup .is-primary .dashicon,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button .dashicon,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary .dashicon {
+  margin-left: 0;
+  margin-right: 0;
+}
+.bPlPanelBody .bPlBtnGroup .components-button.has-icon,
+.bPlPanelBody .bPlBtnGroup .is-primary.has-icon,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button.has-icon,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary.has-icon {
+  padding: 6px 9px;
+}
+.bPlPanelBody .bPlBtnGroup .components-button.has-icon.is-small,
+.bPlPanelBody .bPlBtnGroup .is-primary.has-icon.is-small,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .components-button.has-icon.is-small,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary.has-icon.is-small {
+  padding: 0 4px;
+}
+.bPlPanelBody .bPlBtnGroup .is-primary,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary {
+  color: #fff;
+  background-color: #146EF5;
+}
+.bPlPanelBody .bPlBtnGroup .is-primary:hover,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:hover {
+  background-color: #146EF5 !important;
+}
+.bPlPanelBody .bPlBtnGroup .is-primary:focus,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup .is-primary:focus {
+  outline: 2px solid #146EF5 !important;
+}
+.bPlPanelBody .bPlBtnGroup svg,
+.bPlDropdownPopover .components-popover__content .bPlBtnGroup svg {
+  margin-right: 0 !important;
+}
+.bPlPanelBody .bplItemTitle,
+.bPlDropdownPopover .components-popover__content .bplItemTitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.bPlPanelBody .addItem,
+.bPlDropdownPopover .components-popover__content .addItem {
+  text-align: center;
+  background: #146EF5;
+}
+.bPlPanelBody .addItem button,
+.bPlDropdownPopover .components-popover__content .addItem button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: #146EF5;
+}
+.bPlPanelBody .addItem button:hover,
+.bPlDropdownPopover .components-popover__content .addItem button:hover {
+  color: #fff;
+  background: #146EF5 !important;
+}
+.bPlPanelBody .addItem button:focus,
+.bPlDropdownPopover .components-popover__content .addItem button:focus {
+  box-shadow: none;
+}
+.bPlPanelBody .addItem button:active,
+.bPlDropdownPopover .components-popover__content .addItem button:active {
+  color: #fff;
+}
+.bPlPanelBody .addItem button .dashicon,
+.bPlDropdownPopover .components-popover__content .addItem button .dashicon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  margin-bottom: -5px;
+  color: #fff;
+}
+.bPlPanelBody .itemAction .removeItem,
+.bPlPanelBody .itemAction .duplicateItem,
+.bPlDropdownPopover .components-popover__content .itemAction .removeItem,
+.bPlDropdownPopover .components-popover__content .itemAction .duplicateItem {
+  color: #fff;
+  padding: 5px 10px;
+}
+.bPlPanelBody .itemAction .removeItem .dashicon,
+.bPlPanelBody .itemAction .removeItem svg,
+.bPlPanelBody .itemAction .duplicateItem .dashicon,
+.bPlPanelBody .itemAction .duplicateItem svg,
+.bPlDropdownPopover .components-popover__content .itemAction .removeItem .dashicon,
+.bPlDropdownPopover .components-popover__content .itemAction .removeItem svg,
+.bPlDropdownPopover .components-popover__content .itemAction .duplicateItem .dashicon,
+.bPlDropdownPopover .components-popover__content .itemAction .duplicateItem svg {
+  margin-right: 5px;
+  margin-bottom: -2px;
+}
+.bPlPanelBody .itemAction .removeItem,
+.bPlDropdownPopover .components-popover__content .itemAction .removeItem {
+  background-color: red;
+}
+.bPlPanelBody .itemAction .removeItem .dashicon,
+.bPlDropdownPopover .components-popover__content .itemAction .removeItem .dashicon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.bPlPanelBody .itemAction .duplicateItem,
+.bPlDropdownPopover .components-popover__content .itemAction .duplicateItem {
+  background-color: #146EF5;
+}
+.bPlPanelBody.help .helpItem,
+.bPlDropdownPopover .components-popover__content.help .helpItem {
+  text-align: center;
+  background: #146EF5;
+  padding: 12px 0;
+}
+.bPlPanelBody.help .helpItem:not(:first-child),
+.bPlDropdownPopover .components-popover__content.help .helpItem:not(:first-child) {
+  margin-top: 15px;
+}
+.bPlPanelBody.help .helpItem a,
+.bPlDropdownPopover .components-popover__content.help .helpItem a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+.bPlPanelBody.help .helpItem a:focus,
+.bPlDropdownPopover .components-popover__content.help .helpItem a:focus {
+  box-shadow: none;
+}
+.bPlPanelBody.help .helpItem a:active,
+.bPlDropdownPopover .components-popover__content.help .helpItem a:active {
+  color: #fff;
+}
+.bPlPanelBody.help .helpItem a .dashicon,
+.bPlDropdownPopover .components-popover__content.help .helpItem a .dashicon {
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.bPlPanelBody.help .rateUs a,
+.bPlDropdownPopover .components-popover__content.help .rateUs a {
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 8px;
+}
+.bPlPanelBody.help .rateUs a span:first-child,
+.bPlDropdownPopover .components-popover__content.help .rateUs a span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control {
+  border-width: 1px !important;
+  border-color: #146EF5 !important;
+}
+.bPlPanelBody .components-base-control .components-base-control__field .components-toggle-group-control::before {
+  background: #146EF5;
+}
+
+.bPlPanelBody .flex1 {
+  flex: 1;
+}
+.bPlPanelBody .flex2 {
+  flex: 2;
+}
+.bPlPanelBody .flex3 {
+  flex: 3;
+}
+.bPlPanelBody .flex4 {
+  flex: 4;
+}
+.bPlPanelBody .flex5 {
+  flex: 5;
+}
+.bPlPanelBody .flex6 {
+  flex: 6;
+}
+
+.bPlCustomPopoverWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bPlCustomPopoverChildren {
+  width: 240px;
+  padding: 10px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/BoxControl/BoxControl.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlBoxControl .sides {
+  display: flex;
+  align-items: center;
+}
+.bPlBoxControl .sides.gap {
+  gap: 5px;
+}
+.bPlBoxControl .bplUnitControlWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bPlBoxControl .bplUnitControlWrapper .components-base-control.components-input-control.components-number-control {
+  margin-bottom: 0px !important;
+}
+.bPlBoxControl .bplUnitControlWrapper .components-base-control.components-input-control.components-number-control .components-base-control__field .components-input-base .components-input-control__container .components-input-control__input {
+  font-size: 13px !important;
+  padding-right: 0px !important;
+}
+.bPlBoxControl .bplUnitControlWrapper .components-base-control.components-input-control.components-number-control .components-base-control__field .components-input-base .components-input-control__container .components-input-control__suffix .components-unit-control__select {
+  font-size: 8px !important;
+  padding: 0px 0px;
+}
+.bPlBoxControl .bplUnitControlWrapper .components-base-control.components-input-control.components-number-control .components-base-control__field .components-input-base .components-input-control__container .components-input-control__suffix {
+  width: 17px !important;
+}
+.bPlBoxControl .bplUnitControlWrapper .sideLabel {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.bPlBoxControl .bplBoxControlLinkButton {
+  background: transparent;
+  cursor: pointer;
+  height: 32px;
+  display: grid;
+  align-self: self-start;
+  align-content: center;
+  padding: 0 4px;
+  border: 1px solid #949494;
+  border-left: unset;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+.bPlBoxControl .bplBoxControlLinkButton.activeLink {
+  background-color: #146EF5;
+}
+.bPlBoxControl .bplBoxControlLinkButton.activeLink .dashicons {
+  color: #fff;
+}
+.bPlBoxControl .bplBoxControlLinkButton .dashicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.bPlBoxControl .bplBoxControlLinkButton .dashicons.dashicons-image-rotate {
+  color: #666;
+}
+.bPlBoxControl .bplBoxControlLinkButton .dashicons.dashicons-image-rotate:hover {
+  color: black;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/BplBlockPreview/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlBlockPreviewWrapper {
+  display: flex;
+  align-items: center;
+}
+.bPlBlockPreviewWrapper .bPl-previewBtn.bPl-activeBtn {
+  color: #fff;
+  background: #146EF5;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Button/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlButton {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 0.5em;
+  outline: 0;
+  z-index: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.bPlButton .bPlButton-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.bPlButton svg {
+  fill: currentColor;
+  width: 1.2em;
+  height: 1.2em;
+}
+.bPlButton:hover, .bPlButton:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.bPlButton.variant-primary, .bPlButton.variant-secondary, .bPlButton.variant-danger {
+  color: #fff;
+}
+.bPlButton.variant-primary::before, .bPlButton.variant-secondary::before, .bPlButton.variant-danger::before {
+  background: #070127;
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+.bPlButton.variant-primary:hover::before, .bPlButton.variant-secondary:hover::before, .bPlButton.variant-danger:hover::before {
+  width: 100%;
+}
+.bPlButton.variant-primary.white::before, .bPlButton.variant-secondary.white::before, .bPlButton.variant-danger.white::before {
+  background: #fff;
+}
+.bPlButton.variant-primary {
+  background: #146EF5;
+}
+.bPlButton.variant-primary.white:hover {
+  color: #146EF5;
+}
+.bPlButton.variant-primary.outline {
+  color: #146EF5;
+  background: transparent;
+  border: 2px solid #146EF5;
+}
+.bPlButton.variant-primary.outline::before {
+  background: #146EF5;
+}
+.bPlButton.variant-primary.outline:hover {
+  color: #fff;
+}
+.bPlButton.variant-primary.outline.white {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.bPlButton.variant-primary.outline.white::before {
+  background: #fff;
+}
+.bPlButton.variant-primary.outline.white:hover {
+  color: #146EF5;
+}
+.bPlButton.variant-secondary {
+  background: #FF7A00;
+}
+.bPlButton.variant-secondary.white:hover {
+  color: #FF7A00;
+}
+.bPlButton.variant-secondary.outline {
+  color: #FF7A00;
+  background: transparent;
+  border: 2px solid #FF7A00;
+}
+.bPlButton.variant-secondary.outline::before {
+  background: #FF7A00;
+}
+.bPlButton.variant-secondary.outline:hover {
+  color: #fff;
+}
+.bPlButton.variant-danger {
+  background: #dc3545;
+}
+.bPlButton.variant-danger.white:hover {
+  color: #FF7A00;
+}
+.bPlButton.variant-danger.outline {
+  color: #dc3545;
+  background: transparent;
+  border: 2px solid #dc3545;
+}
+.bPlButton.variant-danger.outline::before {
+  background: #FF7A00;
+}
+.bPlButton.variant-danger.outline:hover {
+  color: #fff;
+}
+.bPlButton.size-medium {
+  font-size: 14px;
+  padding: 8px 18px;
+}
+.bPlButton.size-small {
+  font-size: 12px;
+  padding: 6px 14px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/ColorControl/ColorControl.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlColorPopover {
+  z-index: 10000000;
+}
+.bPlColorPopover .components-popover__content {
+  min-width: auto;
+  max-width: 250px;
+}
+
+.bPlColor {
+  display: flex;
+  align-items: center;
+}
+
+.bPlColorButtonContainer {
+  height: 30px;
+  width: 30px;
+  background-image: linear-gradient(45deg, #ddd 25%, transparent 0), linear-gradient(-45deg, #ddd 25%, transparent 0), linear-gradient(45deg, transparent 75%, #ddd 0), linear-gradient(-45deg, transparent 75%, #ddd 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+  border: 1px solid #e9e9e9;
+  border-radius: 50%;
+}
+.bPlColorButtonContainer .bPlColorButton {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  outline: 0px;
+  border: none;
+  cursor: pointer;
+}
+.bPlColorButtonContainer .bPlColorButton:hover {
+  cursor: pointer;
+}
+
+.bPlThemeColors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Device/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlDeviceControl {
+  gap: 5px;
+}
+.bPlDeviceControl button {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 1px;
+  height: 17px !important;
+  width: 17px !important;
+  display: flex;
+  cursor: pointer;
+}
+.bPlDeviceControl button .dashicons {
+  font-size: 13px;
+}
+.bPlDeviceControl button.active {
+  border-color: #146EF5;
+}
+.bPlDeviceControl button.active .dashicons {
+  color: #146EF5;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Gradient/Gradient.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplAdvRangeColor .components-base-control.components-range-control .components-base-control__field .components-range-control__root .components-range-control__wrapper .components-range-control__track,
+.bplAdvRangeColor .components-base-control.components-range-control .components-base-control__field .components-range-control__root .components-range-control__wrapper .components-range-control__thumb-wrapper span {
+  background: #146EF5 !important;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/HelpPanel/HelpPanel.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlHelpPanel .helpItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.bPlHelpPanel .helpItems a {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  display: inline-flex;
+  color: #fff;
+  background-color: #146EF5;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 0.3s ease-in-out;
+}
+.bPlHelpPanel .helpItems a:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px 1px, rgba(0, 0, 0, 0.06) 0px 2px 16px 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transform: translateY(-4px);
+}
+.bPlHelpPanel .helpItems a:hover, .bPlHelpPanel .helpItems a:focus, .bPlHelpPanel .helpItems a:active {
+  border: none;
+  outline: 0;
+}
+.bPlHelpPanel .helpItems a svg {
+  fill: #fff;
+}
+.bPlHelpPanel .helpItems a p {
+  font-weight: bold;
+  color: inherit;
+  margin: 0;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/IconControl/IconControl.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlIconTitle i {
+  font-size: 25px;
+}
+
+.bPlIconSelect {
+  position: relative;
+}
+.bPlIconSelect input {
+  width: 100%;
+}
+.bPlIconSelect .bPlIconLists {
+  position: absolute;
+  width: 100%;
+  min-height: 80px;
+  max-height: 200px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  overflow-y: scroll;
+  z-index: 99;
+  margin: 0;
+  box-shadow: 0 4px 15px 0 #5495f8;
+  border-radius: 8px;
+}
+.bPlIconSelect .bPlIconLists i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  box-sizing: content-box;
+  padding: 8px 0;
+  margin: 0;
+}
+.bPlIconSelect .bPlIconLists i:hover {
+  background-color: #85b4fa;
+  cursor: pointer;
+}
+.bPlIconSelect .dashicon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/IconLibrary/IconLibrary.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlIconLibrary .panel-icon {
+  display: flex;
+}
+.bPlIconLibrary .panel-icon svg {
+  height: 18px;
+}
+.bPlIconLibrary .bPlIconLibrary-removeIconBtn {
+  background: #da5757;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.bPlIconLibrary .bPlIconLibrary-removeIconBtn:hover {
+  opacity: 0.8;
+  background: #da5757 !important;
+  color: white !important;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper {
+  background: rgba(0, 0, 0, 0.158);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999999 !important;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper.isOpen .bPlIconLibraryModal {
+  animation: open 0.3s ease-in;
+}
+@keyframes open {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal {
+  width: 55%;
+  height: 80%;
+  background: #fff;
+  border-radius: 5px;
+  /* body section */
+  /* footer section */
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderLogo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderLogo svg {
+  height: 22px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderLogo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: none;
+  white-space: nowrap;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderClose {
+  border-left: 1px solid #ccc;
+  padding-left: 5px;
+  display: grid;
+  place-items: center;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryHeader .bPlIconLibraryHeaderClose svg {
+  cursor: pointer;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody {
+  display: flex;
+  height: calc(100% - 90px);
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar {
+  width: 255px;
+  border-right: 1px solid #ccc;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar .bPlIconLibrarySidebarMenu {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar .bPlIconLibrarySidebarMenu li {
+  font-weight: 400;
+  padding: 15px 0;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border-left: 3px solid transparent;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar .bPlIconLibrarySidebarMenu li:hover {
+  background: #f4f2fa;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibrarySidebar .bPlIconLibrarySidebarMenu li.active {
+  background: #efebfa;
+  border-left: 3px solid #146EF5;
+  color: #000;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain {
+  width: calc(100% - 255px);
+  padding-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* .bPl-icon-library-body { */
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch {
+  position: relative;
+  margin-right: 70px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch .bPlIconLibrarySearchInput {
+  width: 100%;
+  height: 30px;
+  padding: 0 15px;
+  color: #757575;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.1s ease-in-out;
+  font-size: 13px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch .bPlIconLibrarySearchInput:focus {
+  outline: none;
+  box-shadow: none;
+  box-shadow: 0px 0px 0px 1px #146EF5;
+  border-color: #146EF5;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibrarySearch .bPlIconLibrarySearchIcon {
+  position: absolute;
+  height: 15px;
+  fill: #707070;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper {
+  margin-right: 45px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPl-icon-library-iconCategory {
+  margin-top: 15px;
+  display: flex;
+  gap: 5px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPl-icon-library-iconCategory .bPl-icon-singleCategory {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: #146EF5;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 6px 10px;
+  /* padding-right: 5px; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 2px #d9d9d9;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPl-icon-library-iconCategory .bPl-icon-singleCategory svg {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons {
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden auto;
+  /* height: calc(100% - 76px); */
+  margin-top: 15px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon.isActive {
+  background: #146EF5;
+  color: #fff;
+  fill: #fff;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon.isActive:hover {
+  background: #146EF5;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon:hover {
+  background: #f3f0ff;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon svg {
+  height: 22px;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryBody .bPlIconLibraryMain .bPlIconLibraryIconsWrapper .bPlIconLibraryIcons .bPlIconLibraryIcon .bPlIconLibraryIconLabel {
+  font-size: 11px;
+  padding: 0px 12px 0;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryFooter {
+  border-top: 1px solid #ccc;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryFooter .bPlIconLibraryFooterInsert {
+  all: unset;
+  background: #146EF5;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.bPlIconLibrary .bPlIconLibraryModalWrapper .bPlIconLibraryModal .bPlIconLibraryFooter .bPlIconLibraryFooterInsert:hover {
+  box-shadow: 1px 1px 1px #d1d1d1;
+  background: #6244c1;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/ItemsPanel/Sortable.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlSortablePanelItem .itemsPanelHeader {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 0px;
+}
+.bPlSortablePanelItem .itemsPanelHeader .gripIcon {
+  cursor: grab;
+  margin: 0px;
+  display: grid;
+  padding: 0 10px;
+  height: 100%;
+}
+.bPlSortablePanelItem .itemsPanelHeader .gripIcon svg {
+  width: 16px;
+  height: 16px;
+  place-self: center;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .repeater-panel-title {
+  cursor: pointer;
+  margin: 0px;
+  height: 100%;
+  width: 125px;
+  display: inline-block;
+  padding-left: 5px;
+  transition: background-color 0.2s ease-in-out;
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .repeater-panel-title:hover {
+  background-color: #ccc;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .itemAction {
+  display: flex;
+  height: 100%;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .itemAction > div {
+  border-left: 1px solid #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .itemAction > div svg {
+  width: 18px;
+  height: 18px;
+}
+.bPlSortablePanelItem .itemsPanelHeader .panel-header-title .itemAction > div:hover {
+  background-color: #ccc;
+}
+.bPlSortablePanelItem .itemsPanelBody {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  transition: all 0.5s ease;
+}
+.bPlSortablePanelItem .itemsPanelBody.hidden {
+  height: 0;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Loading/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlLoading .loadingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.bPlLoading .loadingContent.horizontal {
+  flex-direction: row;
+}
+.bPlLoading .loadingContent .loadingSpinner {
+  width: 2rem;
+  height: 2rem;
+  border: 4px solid #146EF5;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: bPlLoadingSpin 1s linear infinite;
+}
+.bPlLoading .loadingContent .loadingText {
+  color: #485781;
+  font-size: 18px;
+}
+@keyframes bPlLoadingSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/MediaControl/MediaControl.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlInlineMediaUpload .components-base-control {
+  width: calc(100% - 36px) !important;
+}
+.bPlInlineMediaUpload button {
+  height: 31px;
+  padding: 3px !important;
+  color: #fff !important;
+  background-color: #146EF5 !important;
+  border: none !important;
+  outline: 0;
+}
+.bPlInlineMediaUpload button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0px #146EF5 !important;
+}
+
+.bPlMediaPlaceholder .components-placeholder__fieldset {
+  flex-direction: row !important;
+}
+.bPlMediaPlaceholder button {
+  color: #fff !important;
+  background-color: #146EF5 !important;
+}
+.bPlMediaPlaceholder .components-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 !important;
+}
+.bPlMediaPlaceholder .bPlUrlInput {
+  flex: 1;
+}
+.bPlMediaPlaceholder .bPlUrlInput h3 {
+  font-size: 15px !important;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+.bPlMediaPlaceholder .bPlUrlInput input {
+  width: -webkit-fill-available;
+  padding: 8.5px 15px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  line-height: 0;
+}
+.bPlMediaPlaceholder .bPlUrlInput button {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 10px !important;
+}
+
+.bPlPanelBody .bPlMediaPlaceholder .bPlUrlInput .components-base-control {
+  flex: 1;
+}
+.bPlPanelBody .bPlMediaPlaceholder .bPlUrlInput input {
+  width: 100%;
+}
+
+.bPlMediaArea .mediaAreaContainer {
+  height: 110px;
+  background-image: linear-gradient(45deg, #d5d8dc 25%, transparent 0, transparent 75%, #d5d8dc 0, #d5d8dc), linear-gradient(45deg, #d5d8dc 25%, transparent 0, transparent 75%, #d5d8dc 0, #d5d8dc);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.bPlMediaArea .mediaAreaContainer .mediaPlusBtnWrapper .mediaPlusBtnCircle {
+  width: 30px;
+  height: 30px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ababab;
+  border-radius: 30px;
+}
+.bPlMediaArea .mediaAreaContainer .mediaPlusBtnWrapper .mediaPlusBtnCircle svg {
+  margin: 0px !important;
+}
+.bPlMediaArea .mediaAreaContainer .mediaButton {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  left: 0;
+  text-align: center;
+  color: white;
+  background: #161616;
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+.bPlMediaArea .mediaAreaContainer .mediaDelete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  color: white;
+  background: #161616;
+  padding: 3px 6px;
+}
+.bPlMediaArea .mediaAreaContainer .mediaImage {
+  -o-object-fit: unset !important;
+     object-fit: unset !important;
+  border: none;
+}
+.bPlMediaArea .mediaAreaContainer:hover .mediaButton {
+  bottom: 0;
+}
+.bPlMediaArea .mediaAreaContainer:hover .mediaDelete {
+  display: block;
+}
+.bPlMediaArea .bplMediaAreaErrorMessage {
+  font-size: 12px;
+  color: #D93025;
+  line-height: 1.2;
+  margin: 4px 0 0 0 !important;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/MultiSelectControl/MultiSelectControl.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlMultiSelect ul.listWrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+.bPlMultiSelect ul.listWrap li.valueItem {
+  background: #515962;
+  color: white;
+  line-height: 1.2;
+  font-size: 10px;
+  border: none;
+  border-radius: 0;
+  padding: 2px 3px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.bPlMultiSelect ul.listWrap li.valueItem span {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bPlMultiSelect ul.listWrap li.plusIcon {
+  margin: 0;
+}
+.bPlMultiSelect ul.listWrap li.plusIcon span {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #515962;
+  cursor: pointer;
+  padding-top: 1px;
+}
+.bPlMultiSelect ul.listWrap input[type=search] {
+  width: auto;
+  min-width: 10px;
+  height: 20px;
+  min-height: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 2px 3px;
+  border: none;
+  outline: none;
+}
+.bPlMultiSelect ul.listWrap input[type=search]:focus {
+  box-shadow: none;
+}
+
+.bPlItemsPopover .components-popover__content {
+  width: 247px;
+}
+.bPlItemsPopover .components-popover__content p {
+  margin: 0px;
+  padding: 5px;
+  cursor: pointer;
+}
+.bPlItemsPopover .components-popover__content .activeItem {
+  background-color: #d5d8dc;
+}
+.bPlItemsPopover .components-popover__content p:hover {
+  background-color: #e6e8ea;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/PanelSelectControl/PanelSelectControl.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.anchor-list-admin-panel {
+  height: 34px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  margin-top: 0;
+}
+
+.anchor-list-admin-panel .anchor-admin-panel-list {
+  background: #515962;
+  color: white;
+  line-height: 1.2;
+  font-size: 10px;
+  border: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  padding: 2px 3px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.anchor-list-admin-panel .anchor-admin-panel-list .deleteIcon {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.anchor-list-admin-panel .anchor-admin-panel-list-plus-icon {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.anchor-list-admin-panel .anchor-admin-panel-list-plus-icon .squirePlusIcon {
+  font-size: 17px;
+  color: #515962;
+  cursor: pointer;
+}
+
+.anchor-list-admin-panel input[type=search] {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.anchor-list-admin-panel input[type=search]:focus {
+  box-shadow: none;
+}
+
+.popover-anchor-admin-panel {
+  width: 246px;
+}
+
+.popover-anchor-admin-panel .components-popover__content {
+  width: 100%;
+}
+
+.popover-anchor-admin-panel p {
+  margin: 0;
+  padding: 2px 4px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.popover-anchor-admin-panel .isActiveTag {
+  background-color: #d5d8dc;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/SelectPureControl/SelectPureControl.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplSelectPure {
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  min-height: 44px;
+  background-color: rgba(20, 110, 245, 0.145);
+  position: relative;
+  padding: 5px 10px;
+  border: 1px solid rgba(20, 110, 245, 0.314);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(20, 110, 245, 0.145);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bplSelectPure .selectSelectedLabel {
+  font-size: 14px;
+  color: #fff;
+  background-color: #146EF5;
+  display: inline-flex;
+  border-radius: 3px;
+  padding: 4px 5px;
+  margin: 5px 10px 5px 0;
+  cursor: initial;
+}
+.bplSelectPure .selectSelectedLabel:last-of-type {
+  margin-right: 0;
+}
+.bplSelectPure .selectSelectedLabel .closeIcon {
+  cursor: pointer;
+  width: 18px;
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+}
+.bplSelectPure .selectSelectedLabel .closeIcon:hover {
+  color: #e4e4e4;
+}
+.bplSelectPure .selectSelectedLabel .closeIcon::before, .bplSelectPure .selectSelectedLabel .closeIcon::after {
+  content: "";
+  width: 13px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.bplSelectPure .selectSelectedLabel .closeIcon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.bplSelectPure .selectOptions {
+  display: none;
+  width: 100%;
+  max-height: 220px;
+  color: #146EF5;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 100% !important;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px 0 #5495f8;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 99;
+}
+.bplSelectPure.selectOptionsOpened .selectOptions {
+  display: block;
+}
+.bplSelectPure .selectAutocomplete {
+  font-size: 15px;
+  width: 100%;
+  background-color: #f9f9f8;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid #146EF5;
+  border-radius: 0;
+  outline: none;
+}
+.bplSelectPure .selectAutocomplete:focus {
+  border-color: #146EF5;
+  box-shadow: none;
+}
+.bplSelectPure .selectOption {
+  line-height: 24px;
+  height: 44px;
+  padding: 10px;
+  border-bottom: 1px solid #146EF5;
+}
+.bplSelectPure .selectOptionSelected {
+  color: #5495f8;
+  cursor: initial;
+  pointer-events: none;
+}
+.bplSelectPure .selectOptionHidden {
+  display: none;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/SelectTokenField/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 5px 5px;
+  border: 1px solid #b3b3b3;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 1px 6px #e5e5e5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 240px;
+  z-index: 9999;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list li {
+  color: #444;
+  cursor: pointer;
+  /* background:linear-gradient(#146EF5 20%, #422c8d 50%, #422c8d 52%, #146EF5 100%); */
+  padding: 5px 5px;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list > li:hover:not(.bPlTools-multipleActiveItem) {
+  color: #fff;
+  background: linear-gradient(#146EF5 20%, #2e6ac3 50%, #336abb 52%, #146EF5 100%) !important;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list .activeItemInList {
+  color: #fff;
+  background: linear-gradient(#146EF5 20%, #2e6ac3 50%, #336abb 52%, #146EF5 100%);
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-field-dropdown-wrapper .bPlTools-token-field-dropdown-list .bPlTools-multipleActiveItem {
+  color: #ccc;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* border: 1px solid #e5e5e5; */
+  border: 1px solid #b3b3b3;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-token-field-value {
+  color: #adadad;
+  font-size: 14px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon {
+  fill: #adadad;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon svg,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon svg {
+  margin: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-xMark-icon:hover,
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-single-token-field .bPl-arrow-icon:hover {
+  fill: #000;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .activeField {
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  background-image: linear-gradient(#eee 20%, #fff 80%);
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 0px 10px;
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item:focus {
+  border-color: #146EF5;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-search {
+  border: none;
+  outline: none;
+  min-width: 10px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-search:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #b3b3b3;
+  height: 16px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-multiple-token-field-value {
+  color: #252525;
+  font-size: 13px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon {
+  fill: #adadad;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon svg {
+  margin: 0;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-multiple-token-field .bPl-xMark-icon:hover {
+  fill: #000;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .bPl-token-multiple-filed-wrapper-item .bPl-empty-token-field {
+  position: absolute;
+  inset: 0;
+  color: #a3a3a3;
+  background: linear-gradient(#eee 1%, #fff 15%);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.bPl-token-field-main-wrapper .bPl-single-token-field-wrapper .bPl-token-multiple-filed-wrapper .focusItem {
+  border-color: #146EF5;
+  box-shadow: 0px 0px 2px #6b59a5;
+}
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../bpl-tools/Components/SolidBackground/style.css ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+.panel-custom-color-control-container {
+	border-radius: 5px;
+	width: 250px;
+}
+
+.panel-custom-color-control-container .panel-custom-tab {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.panel-custom-color-control-container .panel-custom-tab .custom-single-tab {
+	padding: 3px 6px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+
+.panel-custom-color-control-container .panel-custom-tab .custom-single-tab:last-child {
+	border-left: none;
+}
+
+.panel-custom-color-control-container .panel-custom-tab .custom-single-tab:hover {
+	background: #ccc;
+}
+
+.panel-custom-color-control-container .panel-custom-tab .active {
+	background: #006ba1;
+	color: #e7e7e7;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/SortableControl/SortableControl.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlPanelBody .bplSortableList ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  cursor: grab;
+}
+
+.bplSortableListItem {
+  list-style-type: none;
+  color: #fff;
+  background-color: #146EF5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: grab;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Typography/Typography.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlDropdown .dashicon {
+  margin-right: 0 !important;
+}
+
+.bPlDropdownPopover .bPlTypoFontTitle p:last-child {
+  width: 73px;
+  margin-right: 0;
+}
+.bPlDropdownPopover .bPlTypoFont {
+  margin-top: 0;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect {
+  position: relative;
+  margin-right: 8px;
+  width: 175px;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect input {
+  width: 100%;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .bPlTypoFontLists {
+  position: absolute;
+  height: 200px;
+  background: #fff;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 99;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px 0 #5495f8;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .bPlTypoFontLists li {
+  margin: 0;
+  padding: 3px 10px;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .bPlTypoFontLists li:hover {
+  background-color: #85b4fa;
+  cursor: pointer;
+}
+.bPlDropdownPopover .bPlTypoFont .bPlTypoFontSelect .dashicon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bPlDropdownPopover .bPlTypoFont > div.components-base-control > div.components-base-control__field {
+  margin-bottom: 0 !important;
+  border-radius: 4px;
+}
+.bPlDropdownPopover .bPlTypoFont > div.components-base-control > div.components-base-control__field select {
+  height: 32px;
+  width: 73px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Deprecated/BDevice/BDevice.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlPanelBody .bDevicePopup,
+.bPlDropdownPopover .components-popover__content .bDevicePopup {
+  position: absolute;
+  width: 30px;
+  z-index: 999;
+  top: -11px;
+}
+.bPlPanelBody .bDevice button,
+.bPlDropdownPopover .components-popover__content .bDevice button {
+  cursor: pointer;
+  padding: 1px 6px;
+}
+.bPlPanelBody .bDevice,
+.bPlDropdownPopover .components-popover__content .bDevice {
+  width: 30px;
+  position: relative;
+}
+.bPlPanelBody .bDevice + div,
+.bPlDropdownPopover .components-popover__content .bDevice + div {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+.bPlPanelBody .iconButton,
+.bPlDropdownPopover .components-popover__content .iconButton {
+  background: #ffffff;
+  border: 1px solid #146EF5;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 !important;
+  margin-left: 3px;
+  height: 22px;
+  width: 26px;
+}
+.bPlPanelBody .iconButton span,
+.bPlDropdownPopover .components-popover__content .iconButton span {
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.bPlPanelBody .iconButton svg,
+.bPlDropdownPopover .components-popover__content .iconButton svg {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.bPlPanelBody .iconButton span:before,
+.bPlDropdownPopover .components-popover__content .iconButton span:before {
+  font-size: inherit;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Deprecated/ImageControl/ImageControl.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.editImageHolder {
+  position: relative;
+  min-height: 40px;
+  text-align: center;
+}
+.editImageHolder .mediaControl {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 100;
+}
+.editImageHolder .mediaControl .btnControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 10px;
+  border-radius: 3px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.editImageHolder .mediaControl .btnControl button {
+  color: #146EF5;
+  font-weight: bold;
+}
+.editImageHolder .mediaControl .btnControl button.btnRed {
+  color: red;
+}
+.editImageHolder img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/Components/Deprecated/SpaceControl/SpaceControl.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlSpaceControl .components-unit-control-wrapper .components-unit-control__select {
+  width: 18px !important;
+}
+.bPlSpaceControl .fourColumn {
+  justify-content: space-between;
+}
+.bPlSpaceControl .fourColumn > .components-unit-control-wrapper > .components-unit-control {
+  width: 55px;
+}
+.bPlSpaceControl .fourColumn > .components-unit-control-wrapper > .components-unit-control > .css-d373l0-Item-LabelWrapper {
+  margin-right: 0;
+}
+.bPlSpaceControl .twoColumn {
+  justify-content: space-between;
+}
+.bPlSpaceControl .twoColumn > .components-unit-control-wrapper > .components-unit-control {
+  width: 110px;
+}
+.bPlSpaceControl .twoColumn > .components-unit-control-wrapper > .components-unit-control > .css-d373l0-Item-LabelWrapper {
+  margin-right: 0;
+}
+.bPlSpaceControl .bPlBtnGroup {
+  display: flex;
+}
+.bPlSpaceControl .bPlBtnGroup .components-button,
+.bPlSpaceControl .bPlBtnGroup .bPlBtnGroup .is-primary {
+  height: auto;
+  padding: 6px;
+}
+.bPlSpaceControl .bPlBtnGroup .components-button.side2 {
+  align-items: baseline;
+}
+.bPlSpaceControl .bPlBtnGroup .bPlBtnGroup .is-primary:hover {
+  color: #fff;
+}
+.bPlSpaceControl .bPlBtnGroup .sideScrollIcon svg {
+  transform: rotate(90deg);
+}
+.bPlSpaceControl .bPlBtnGroup .scrollIcon,
+.bPlSpaceControl .bPlBtnGroup .sideScrollIcon,
+.bPlSpaceControl .bPlBtnGroup .dashicons {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/AboutProModal/AboutProModal.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplAboutProModal h3 {
+  margin: 0 0 15px 0;
+}
+.bplAboutProModal .text {
+  font-size: 15px;
+  margin: 25px 0 0 0;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/BControlPro/BControlPro.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplProIdentifier .labelPro {
+  padding: 0px 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #146EF5;
+}
+.bplProIdentifier .components-input-control__container {
+  opacity: 0.75;
+}
+.bplProIdentifier .bplOpacity75 {
+  opacity: 0.75;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.bplProIdentifier .components-form-toggle {
+  opacity: 0.75;
+}
+
+.bplOpacity50 {
+  opacity: 0.5;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/BtnGroupPro/BtnGroupPro.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplProGroupBtn {
+  position: relative;
+}
+.bplProGroupBtn::before {
+  content: "Pro";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: #146EF5;
+  padding: 2px 8px;
+  border-radius: 50px;
+  z-index: 10;
+  display: none;
+}
+.bplProGroupBtn:hover::before {
+  display: block;
+}
+.bplProGroupBtn svg {
+  opacity: 0.75;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/FrontShortCode/FrontShortCode.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bPlFrontShortCode {
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.bPlFrontShortCode .bPlFrontShortCodeWrapper {
+  background: #f4f7f9;
+  padding: 8px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.bPlFrontShortCode .bPlFrontShortCodeInput {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  overflow: hidden;
+}
+.bPlFrontShortCode .bPlFrontShortCodeInput input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #334155;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 8px 0;
+  width: 180px;
+  cursor: default;
+}
+.bPlFrontShortCode .bPlFrontShortCodeInput .bPlCopyBtn {
+  background: #eef5ff;
+  border: none;
+  border-left: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.bPlFrontShortCode .bPlFrontShortCodeInput .bPlCopyBtn:hover {
+  background: #e0eeff;
+}
+.bPlFrontShortCode .bPlFrontShortCodeInput .bPlCopyBtn svg {
+  display: block;
+}
+.bPlFrontShortCode .bPlFrontShortCodeText {
+  color: #64748b;
+  font-size: 14px;
+}
+.bPlFrontShortCode .tooltip {
+  visibility: hidden;
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 10;
+  bottom: 120%;
+  left: 40px;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 12px;
+}
+.bPlFrontShortCode .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+.bPlFrontShortCode .tooltip.visible {
+  visibility: visible;
+  opacity: 1;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/ProModal/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplProModalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(4px);
+  z-index: 100000 !important;
+}
+
+.bplProModal {
+  max-width: 906px !important;
+  width: 95vw !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  margin: 0 auto;
+}
+.bplProModal .components-modal__header {
+  display: none !important;
+}
+.bplProModal .components-modal__content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.bplProModal .components-modal__content > div {
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #fff;
+  position: relative;
+  padding: 24px;
+}
+.bplProModal .components-modal__content .close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.bplProModal .components-modal__content .close:hover, .bplProModal .components-modal__content .close:focus, .bplProModal .components-modal__content .close:active {
+  background: none;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+.bplProModal .components-modal__content .close svg {
+  width: 32px;
+  height: 32px;
+  fill: #146EF5;
+}
+.bplProModal .left {
+  width: 350px;
+  max-width: 100%;
+  background: #DAE6F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+}
+.bplProModal .left svg {
+  min-width: 120px;
+  width: 242px;
+  max-width: 100%;
+  height: auto;
+  fill: #146EF5;
+}
+.bplProModal .right {
+  flex: 1.3;
+  min-width: 300px;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bplProModal .right h2 {
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 600;
+  color: #001737;
+  margin: 0 0 16px 0;
+}
+.bplProModal .right p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1B2E4B;
+  margin: 0 0 23px 0;
+}
+.bplProModal .right h3 {
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 600;
+  color: #001737;
+  margin: 0 0 8px 0;
+}
+.bplProModal .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+.bplProModal .right ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 4px 0;
+}
+.bplProModal .right ul li svg {
+  width: 16px;
+  height: 15px;
+  flex-shrink: 0;
+  fill: #146EF5;
+  margin-top: 0.2em;
+}
+.bplProModal .right ul li span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1B2E4B;
+  line-height: 1.4;
+}
+.bplProModal .right .bPlButton {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 500;
+  justify-content: center;
+  padding: 10px 20px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/RadioControlPro/RadioControlPro.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.radioControlRadioControlPro {
+  width: 100%;
+}
+.radioControlRadioControlPro .bplProIdentifier {
+  opacity: 0.75;
+}
+.radioControlRadioControlPro .bplProIdentifier .components-input-control__container {
+  opacity: 0.75;
+}
+.radioControlRadioControlPro .bplProIdentifier .components-form-toggle {
+  opacity: 0.75;
+}
+.radioControlRadioControlPro .bPlLabel {
+  width: 100%;
+}
+.radioControlRadioControlPro .radioControllabelContainer {
+  display: flex;
+  gap: 5px;
+}
+.radioControlRadioControlPro .radioControllabelPro {
+  padding: 0px 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #146EF5;
+}
+.radioControlRadioControlPro .radioControlbplOpacity75 {
+  opacity: 0.75;
+  white-space: nowrap;
+}
+.radioControlRadioControlPro .radioControlbplOpacity50 {
+  opacity: 0.5;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!../bpl-tools/ProControls/SelectControlPro/SelectControlPro.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bplPorSelect .proOption {
+  color: #fff;
+  background-color: #146EF5;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/Components/Styles.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --bplugins: #2f80ed; /* Primary */
+  --bplugins-2: #1b5fd6; /* Darker (for hover/gradient) */
+  --ink: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+  --radius: 18px;
+  --radius-sm: 14px;
+}
+
+.bplg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.18s ease;
+  outline: none;
+}
+
+.bplg-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(2, 6, 23, 0.08);
+  border-color: rgba(148, 163, 184, 0.9);
+  color: var(--ink);
+}
+
+.bplg-btn-primary {
+  /* border-color: transparent; */
+  background: linear-gradient(135deg, var(--bplugins), var(--bplugins-2));
+  color: #fff !important;
+  box-shadow: 0 12px 20px rgba(47, 128, 237, 0.22);
+}
+
+.bplg-btn-primary:hover {
+  filter: brightness(1.02);
+  color: #fff !important;
+  box-shadow: 0 14px 22px rgba(47, 128, 237, 0.28);
+  transform: translateY(-1px);
+}
+
+.bplg-btn-ghost {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+.bplg-card {
+  background: var(--card);
+  box-shadow: 0 10px 22px rgba(2, 6, 23, 0.06);
+  overflow: hidden;
+}
+
+.bplg-card-head {
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bplg-card-head h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.bplg-card-head p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 62ch;
+}
+
+.bplg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(47, 128, 237, 0.25);
+  color: var(--bplugins-2);
+  background: rgba(47, 128, 237, 0.1);
+  white-space: nowrap;
+}
+
+.bplg-card-body {
+  padding: 16px 18px 18px;
+}
+
+.bplg-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 680px) {
+  .bplg-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.bplg-feature {
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, #fff, rgba(246, 248, 252, 0.55));
+  padding: 12px 12px 12px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  transition: all 0.16s ease;
+}
+
+.bplg-feature:hover {
+  border-color: rgba(47, 128, 237, 0.28);
+  box-shadow: 0 12px 22px rgba(2, 6, 23, 0.06);
+  transform: translateY(-1px);
+}
+
+.bplg-ico {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(47, 128, 237, 0.12);
+  color: var(--bplugins-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.bplg-feature h3 {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.bplg-feature p {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .bplg-card-head {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .bplg-card-head {
+    padding: 16px 16px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .bplg-card-head h2 {
+    font-size: 14px;
+  }
+  .bplg-card-head p {
+    font-size: 12px;
+  }
+  .bplg-card-body {
+    padding: 12px 16px 16px;
+  }
+  .bplg-feature {
+    padding: 10px;
+    gap: 8px;
+  }
+  .bplg-ico {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .bplg-feature h3 {
+    font-size: 12.5px;
+  }
+  .bplg-feature p {
+    font-size: 12px;
+  }
+  .bplg-mini {
+    margin-top: 12px;
+    padding-top: 12px;
+    gap: 8px;
+  }
+  .bplg-pill {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+@media (max-width: 360px) {
+  .bplg-card-head {
+    padding: 12px 12px 10px;
+  }
+  .bplg-card-body {
+    padding: 12px 12px 12px;
+  }
+  .bplg-badge {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
+.bplg-shot {
+  padding: 0;
+}
+
+.bplg-shot-top {
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bplg-shot-top h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.bplg-shot-top p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.bplg-shot-media {
+  padding: 14px 14px 16px;
+}
+
+.bplg-shot-frame {
+  border-radius: var(--radius);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff, var(--bg));
+  position: relative;
+}
+
+.bplg-shot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bplg-mini {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(226, 232, 240, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.bplg-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.bplg-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+  display: block;
+}
+
+.bplg-dot-warn {
+  background: var(--warning);
+}
+
+.bplg-actions {
+  margin-top: 16px;
+}
+
+.bplg-actions .bplg-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.bplg-popover-container {
+  /* Ensure popover doesn't overflow mobile screens */
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+@media (max-width: 782px) {
+  /* WordPress admin mobile breakpoint */
+  .bplg-popover-container {
+    width: 90vw !important;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/lightbox-video-gallery/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-lvg-lightbox-video-gallery .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .lbvg-video-gallery {
+  fill: #fff !important;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../plugin-slug/node_modules/lightgallery/css/lightgallery.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "lg";
+  src: url(../fonts/lg.64b800aa.woff2) format("woff2"), url(../fonts/lg.747d0385.ttf) format("truetype"), url(../fonts/lg.356a0e9c.woff) format("woff"), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiID4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWV0YWRhdGE+Cjxqc29uPgo8IVtDREFUQVsKewoJImZvbnRGYW1pbHkiOiAibGciLAoJIm1ham9yVmVyc2lvbiI6IDIsCgkibWlub3JWZXJzaW9uIjogMCwKCSJmb250VVJMIjogIiIsCgkiY29weXJpZ2h0IjogIiIsCgkibGljZW5zZSI6ICIiLAoJImxpY2Vuc2VVUkwiOiAiIiwKCSJkZXNjcmlwdGlvbiI6ICJGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLiIsCgkidmVyc2lvbiI6ICJWZXJzaW9uIDIuMCIsCgkiZm9udElkIjogImxnIiwKCSJwc05hbWUiOiAibGciLAoJInN1YkZhbWlseSI6ICJSZWd1bGFyIiwKCSJmdWxsTmFtZSI6ICJsZyIKfQpdXT4KPC9qc29uPgo8L21ldGFkYXRhPgo8ZGVmcz4KPGZvbnQgaWQ9ImxnIiBob3Jpei1hZHYteD0iMTAyNCI+Cjxmb250LWZhY2UgdW5pdHMtcGVyLWVtPSIxMDI0IiBhc2NlbnQ9Ijk2MCIgZGVzY2VudD0iLTY0IiAvPgo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iMTAyNCIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeDIwOyIgaG9yaXotYWR2LXg9IjUxMiIgZD0iIiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTAxYTsiIGdseXBoLW5hbWU9InBhdXNlX2NpcmNsZV9vdXRsaW5lIiBkYXRhLXRhZ3M9InBhdXNlX2NpcmNsZV9vdXRsaW5lIiBkPSJNNTU0IDI1Ni42Njd2MzQwaDg2di0zNDBoLTg2ek01MTIgODQuNjY3cTE0MCAwIDI0MSAxMDF0MTAxIDI0MS0xMDEgMjQxLTI0MSAxMDEtMjQxLTEwMS0xMDEtMjQxIDEwMS0yNDEgMjQxLTEwMXpNNTEyIDg1Mi42NjdxMTc2IDAgMzAxLTEyNXQxMjUtMzAxLTEyNS0zMDEtMzAxLTEyNS0zMDEgMTI1LTEyNSAzMDEgMTI1IDMwMSAzMDEgMTI1ek0zODQgMjU2LjY2N3YzNDBoODZ2LTM0MGgtODZ6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTAxZDsiIGdseXBoLW5hbWU9InBsYXlfY2lyY2xlX291dGxpbmUiIGRhdGEtdGFncz0icGxheV9jaXJjbGVfb3V0bGluZSIgZD0iTTUxMiA4NC42NjdxMTQwIDAgMjQxIDEwMXQxMDEgMjQxLTEwMSAyNDEtMjQxIDEwMS0yNDEtMTAxLTEwMS0yNDEgMTAxLTI0MSAyNDEtMTAxek01MTIgODUyLjY2N3ExNzYgMCAzMDEtMTI1dDEyNS0zMDEtMTI1LTMwMS0zMDEtMTI1LTMwMSAxMjUtMTI1IDMwMSAxMjUgMzAxIDMwMSAxMjV6TTQyNiAyMzQuNjY3djM4NGwyNTYtMTkyeiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGUwMzM7IiBnbHlwaC1uYW1lPSJzdGFjay0yIiBkYXRhLXRhZ3M9InN0YWNrLTIiIGQ9Ik0zODQgODUzLjMzNGg0MjYuNjY3cTUzIDAgOTAuNS0zNy41dDM3LjUtOTAuNXYtNDI2LjY2N3EwLTUzLTM3LjUtOTAuNXQtOTAuNS0zNy41aC00MjYuNjY3cS01MyAwLTkwLjUgMzcuNXQtMzcuNSA5MC41djQyNi42NjdxMCA1MyAzNy41IDkwLjV0OTAuNSAzNy41ek0xNzAuNjY3IDY3NS4zMzR2LTU0Ny4zMzNxMC0xNy42NjcgMTIuNS0zMC4xNjd0MzAuMTY3LTEyLjVoNTQ3LjMzM3EtMTMuMzMzLTM3LjY2Ny00Ni4zMzMtNjEuNXQtNzQuMzMzLTIzLjgzM2gtNDI2LjY2N3EtNTMgMC05MC41IDM3LjV0LTM3LjUgOTAuNXY0MjYuNjY3cTAgNDEuMzMzIDIzLjgzMyA3NC4zMzN0NjEuNSA0Ni4zMzN6TTgxMC42NjcgNzY4aC00MjYuNjY3cS0xNy42NjcgMC0zMC4xNjctMTIuNXQtMTIuNS0zMC4xNjd2LTQyNi42NjdxMC0xNy42NjcgMTIuNS0zMC4xNjd0MzAuMTY3LTEyLjVoNDI2LjY2N3ExNy42NjcgMCAzMC4xNjcgMTIuNXQxMi41IDMwLjE2N3Y0MjYuNjY3cTAgMTcuNjY3LTEyLjUgMzAuMTY3dC0zMC4xNjcgMTIuNXoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMDcwOyIgZ2x5cGgtbmFtZT0iY2xlYXIiIGRhdGEtdGFncz0iY2xlYXIiIGQ9Ik04MTAgNjY0LjY2N2wtMjM4LTIzOCAyMzgtMjM4LTYwLTYwLTIzOCAyMzgtMjM4LTIzOC02MCA2MCAyMzggMjM4LTIzOCAyMzggNjAgNjAgMjM4LTIzOCAyMzggMjM4eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGUwOTQ7IiBnbHlwaC1uYW1lPSJhcnJvdy1sZWZ0IiBkYXRhLXRhZ3M9ImFycm93LWxlZnQiIGQ9Ik00MjYuNjY3IDc2OHExNy42NjcgMCAzMC4xNjctMTIuNXQxMi41LTMwLjE2N3EwLTE4LTEyLjY2Ny0zMC4zMzNsLTIyNS42NjctMjI1LjY2N2g2NjVxMTcuNjY3IDAgMzAuMTY3LTEyLjV0MTIuNS0zMC4xNjctMTIuNS0zMC4xNjctMzAuMTY3LTEyLjVoLTY2NWwyMjUuNjY3LTIyNS42NjdxMTIuNjY3LTEyLjMzMyAxMi42NjctMzAuMzMzIDAtMTcuNjY3LTEyLjUtMzAuMTY3dC0zMC4xNjctMTIuNXEtMTggMC0zMC4zMzMgMTIuMzMzbC0yOTguNjY3IDI5OC42NjdxLTEyLjMzMyAxMy0xMi4zMzMgMzAuMzMzdDEyLjMzMyAzMC4zMzNsMjk4LjY2NyAyOTguNjY3cTEyLjY2NyAxMi4zMzMgMzAuMzMzIDEyLjMzM3oiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMDk1OyIgZ2x5cGgtbmFtZT0iYXJyb3ctcmlnaHQiIGRhdGEtdGFncz0iYXJyb3ctcmlnaHQiIGQ9Ik01OTcuMzMzIDc2OHExOCAwIDMwLjMzMy0xMi4zMzNsMjk4LjY2Ny0yOTguNjY3cTEyLjMzMy0xMi4zMzMgMTIuMzMzLTMwLjMzM3QtMTIuMzMzLTMwLjMzM2wtMjk4LjY2Ny0yOTguNjY3cS0xMi4zMzMtMTIuMzMzLTMwLjMzMy0xMi4zMzMtMTguMzMzIDAtMzAuNSAxMi4xNjd0LTEyLjE2NyAzMC41cTAgMTggMTIuMzMzIDMwLjMzM2wyMjYgMjI1LjY2N2gtNjY1cS0xNy42NjcgMC0zMC4xNjcgMTIuNXQtMTIuNSAzMC4xNjcgMTIuNSAzMC4xNjcgMzAuMTY3IDEyLjVoNjY1bC0yMjYgMjI1LjY2N3EtMTIuMzMzIDEyLjMzMy0xMi4zMzMgMzAuMzMzIDAgMTguMzMzIDEyLjE2NyAzMC41dDMwLjUgMTIuMTY3eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGUwZjI7IiBnbHlwaC1uYW1lPSJ2ZXJ0aWNhbF9hbGlnbl9ib3R0b20iIGRhdGEtdGFncz0idmVydGljYWxfYWxpZ25fYm90dG9tIiBkPSJNMTcwIDEyOC42NjdoNjg0di04NmgtNjg0djg2ek02ODIgMzg0LjY2N2wtMTcwLTE3Mi0xNzAgMTcyaDEyOHY0MjZoODR2LTQyNmgxMjh6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTFmZjsiIGdseXBoLW5hbWU9ImFwcHMiIGRhdGEtdGFncz0iYXBwcyIgZD0iTTY4MiA4NC42Njd2MTcyaDE3MnYtMTcyaC0xNzJ6TTY4MiAzNDAuNjY3djE3MmgxNzJ2LTE3MmgtMTcyek00MjYgNTk2LjY2N3YxNzJoMTcydi0xNzJoLTE3MnpNNjgyIDc2OC42NjdoMTcydi0xNzJoLTE3MnYxNzJ6TTQyNiAzNDAuNjY3djE3MmgxNzJ2LTE3MmgtMTcyek0xNzAgMzQwLjY2N3YxNzJoMTcydi0xNzJoLTE3MnpNMTcwIDg0LjY2N3YxNzJoMTcydi0xNzJoLTE3MnpNNDI2IDg0LjY2N3YxNzJoMTcydi0xNzJoLTE3MnpNMTcwIDU5Ni42Njd2MTcyaDE3MnYtMTcyaC0xNzJ6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTIwYzsiIGdseXBoLW5hbWU9ImZ1bGxzY3JlZW4iIGRhdGEtdGFncz0iZnVsbHNjcmVlbiIgZD0iTTU5OCA3MjQuNjY3aDIxMnYtMjEyaC04NHYxMjhoLTEyOHY4NHpNNzI2IDIxMi42Njd2MTI4aDg0di0yMTJoLTIxMnY4NGgxMjh6TTIxNCA1MTIuNjY3djIxMmgyMTJ2LTg0aC0xMjh2LTEyOGgtODR6TTI5OCAzNDAuNjY3di0xMjhoMTI4di04NGgtMjEydjIxMmg4NHoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMjBkOyIgZ2x5cGgtbmFtZT0iZnVsbHNjcmVlbl9leGl0IiBkYXRhLXRhZ3M9ImZ1bGxzY3JlZW5fZXhpdCIgZD0iTTY4MiA1OTYuNjY3aDEyOHYtODRoLTIxMnYyMTJoODR2LTEyOHpNNTk4IDEyOC42Njd2MjEyaDIxMnYtODRoLTEyOHYtMTI4aC04NHpNMzQyIDU5Ni42Njd2MTI4aDg0di0yMTJoLTIxMnY4NGgxMjh6TTIxNCAyNTYuNjY3djg0aDIxMnYtMjEyaC04NHYxMjhoLTEyOHoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMzExOyIgZ2x5cGgtbmFtZT0iem9vbV9pbiIgZGF0YS10YWdzPSJ6b29tX2luIiBkPSJNNTEyIDUxMi42NjdoLTg2di04NmgtNDJ2ODZoLTg2djQyaDg2djg2aDQydi04Nmg4NnYtNDJ6TTQwNiAzNDAuNjY3cTgwIDAgMTM2IDU2dDU2IDEzNi01NiAxMzYtMTM2IDU2LTEzNi01Ni01Ni0xMzYgNTYtMTM2IDEzNi01NnpNNjYyIDM0MC42NjdsMjEyLTIxMi02NC02NC0yMTIgMjEydjM0bC0xMiAxMnEtNzYtNjYtMTgwLTY2LTExNiAwLTE5NyA4MHQtODEgMTk2IDgxIDE5NyAxOTcgODEgMTk2LTgxIDgwLTE5N3EwLTEwNC02Ni0xODBsMTItMTJoMzR6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTMxMjsiIGdseXBoLW5hbWU9Inpvb21fb3V0IiBkYXRhLXRhZ3M9Inpvb21fb3V0IiBkPSJNMjk4IDU1NC42NjdoMjE0di00MmgtMjE0djQyek00MDYgMzQwLjY2N3E4MCAwIDEzNiA1NnQ1NiAxMzYtNTYgMTM2LTEzNiA1Ni0xMzYtNTYtNTYtMTM2IDU2LTEzNiAxMzYtNTZ6TTY2MiAzNDAuNjY3bDIxMi0yMTItNjQtNjQtMjEyIDIxMnYzNGwtMTIgMTJxLTc2LTY2LTE4MC02Ni0xMTYgMC0xOTcgODB0LTgxIDE5NiA4MSAxOTcgMTk3IDgxIDE5Ni04MSA4MC0xOTdxMC0xMDQtNjYtMTgwbDEyLTEyaDM0eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU4MGQ7IiBnbHlwaC1uYW1lPSJzaGFyZSIgZGF0YS10YWdzPSJzaGFyZSIgZD0iTTc2OCAyNTIuNjY3YzY4IDAgMTI0LTU2IDEyNC0xMjRzLTU2LTEyNi0xMjQtMTI2LTEyNCA1OC0xMjQgMTI2YzAgMTAgMCAyMCAyIDI4bC0zMDIgMTc2Yy0yNC0yMi01NC0zNC04OC0zNC03MCAwLTEyOCA1OC0xMjggMTI4czU4IDEyOCAxMjggMTI4YzM0IDAgNjQtMTIgODgtMzRsMzAwIDE3NGMtMiAxMC00IDIwLTQgMzAgMCA3MCA1OCAxMjggMTI4IDEyOHMxMjgtNTggMTI4LTEyOC01OC0xMjgtMTI4LTEyOGMtMzQgMC02NCAxNC04OCAzNmwtMzAwLTE3NmMyLTEwIDQtMjAgNC0zMHMtMi0yMC00LTMwbDMwNC0xNzZjMjIgMjAgNTIgMzIgODQgMzJ6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTkwMDsiIGdseXBoLW5hbWU9InJvdGF0ZV9sZWZ0IiBkYXRhLXRhZ3M9InJvdGF0ZV9sZWZ0IiBkPSJNNTU0IDc2NC42NjdxMTI2LTE2IDIxMy0xMTJ0ODctMjI2LTg3LTIyNi0yMTMtMTEydjg2cTkyIDE2IDE1MyA4N3Q2MSAxNjUtNjEgMTY1LTE1MyA4N3YtMTY2bC0xOTQgMTkwIDE5NCAxOTR2LTEzMnpNMzAyIDE1Ni42NjdsNjIgNjJxNDYtMzQgMTA2LTQ0di04NnEtOTYgMTItMTY4IDY4ek0yNjAgMzg0LjY2N3ExMC01OCA0Mi0xMDZsLTYwLTYwcS01NiA3NC02OCAxNjZoODZ6TTMwNCA1NzQuNjY3cS0zNi01Mi00NC0xMDZoLTg2cTEyIDkwIDcwIDE2NnoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlOTAxOyIgZ2x5cGgtbmFtZT0icm90YXRlX3JpZ2h0IiBkYXRhLXRhZ3M9InJvdGF0ZV9yaWdodCIgZD0iTTcyMCAyNzguNjY3cTM0IDQ2IDQ0IDEwNmg4NnEtMTItOTItNjgtMTY2ek01NTQgMTc0LjY2N3E2MCAxMCAxMDYgNDRsNjItNjJxLTcyLTU2LTE2OC02OHY4NnpNODUwIDQ2OC42NjdoLTg2cS0xMCA2MC00NCAxMDZsNjIgNjBxNTgtNzIgNjgtMTY2ek02NjQgNzAyLjY2N2wtMTk0LTE5MHYxNjZxLTkyLTE2LTE1My04N3QtNjEtMTY1IDYxLTE2NSAxNTMtODd2LTg2cS0xMjYgMTYtMjEzIDExMnQtODcgMjI2IDg3IDIyNiAyMTMgMTEydjEzMnoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlOTAyOyIgZ2x5cGgtbmFtZT0ic3dhcF9ob3JpeiIgZGF0YS10YWdzPSJzd2FwX2hvcml6IiBkPSJNODk2IDU1NC42NjdsLTE3MC0xNzB2MTI4aC0zMDB2ODRoMzAwdjEyOHpNMjk4IDQ2OC42Njd2LTEyOGgzMDB2LTg0aC0zMDB2LTEyOGwtMTcwIDE3MHoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlOTAzOyIgZ2x5cGgtbmFtZT0ic3dhcF92ZXJ0IiBkYXRhLXRhZ3M9InN3YXBfdmVydCIgZD0iTTM4NCA4MTAuNjY3bDE3MC0xNzBoLTEyOHYtMzAwaC04NHYzMDBoLTEyOHpNNjgyIDIxMi42NjdoMTI4bC0xNzAtMTcwLTE3MCAxNzBoMTI4djMwMGg4NHYtMzAweiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU5MDQ7IiBnbHlwaC1uYW1lPSJmYWNlYm9vay13aXRoLWNpcmNsZSIgZGF0YS10YWdzPSJmYWNlYm9vay13aXRoLWNpcmNsZSIgZD0iTTUxMiA5NTIuMzJjLTI3MS40NjIgMC00OTEuNTItMjIwLjA1OC00OTEuNTItNDkxLjUyczIyMC4wNTgtNDkxLjUyIDQ5MS41Mi00OTEuNTIgNDkxLjUyIDIyMC4wNTggNDkxLjUyIDQ5MS41Mi0yMjAuMDU4IDQ5MS41Mi00OTEuNTIgNDkxLjUyek02MjguNDI5IDYxMi42NTloLTczLjg4MmMtOC43NTUgMC0xOC40ODMtMTEuNTItMTguNDgzLTI2LjgyOXYtNTMuMzVoOTIuNDE2bC0xMy45NzgtNzYuMDgzaC03OC40Mzh2LTIyOC40MDNoLTg3LjE5NHYyMjguNDAzaC03OS4xMDR2NzYuMDgzaDc5LjEwNHY0NC43NDljMCA2NC4yMDUgNDQuNTQ0IDExNi4zNzggMTA1LjY3NyAxMTYuMzc4aDczLjg4MnYtODAuOTQ3eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU5MDU7IiBnbHlwaC1uYW1lPSJnb29nbGUtd2l0aC1jaXJjbGUiIGRhdGEtdGFncz0iZ29vZ2xlKy13aXRoLWNpcmNsZSIgZD0iTTUxMiA5NTIuMzJjLTI3MS40NjIgMC00OTEuNTItMjIwLjA1OC00OTEuNTItNDkxLjUyczIyMC4wNTgtNDkxLjUyIDQ5MS41Mi00OTEuNTIgNDkxLjUyIDIyMC4wNTggNDkxLjUyIDQ5MS41Mi0yMjAuMDU4IDQ5MS41Mi00OTEuNTIgNDkxLjUyek00ODMuNjg2IDI0OS44MDVjLTMwLjg3NC0xNS4wMDItNjQuMTAyLTE2LjU4OS03Ni45NTQtMTYuNTg5LTIuNDU4IDAtMy44NCAwLTMuODQgMHMtMS4xNzggMC0yLjc2NSAwYy0yMC4wNzAgMC0xMTkuOTYyIDQuNjA4LTExOS45NjIgOTUuNTkgMCA4OS4zOTUgMTA4LjggOTYuNDEgMTQyLjEzMSA5Ni40MWgwLjg3Yy0xOS4yNTEgMjUuNzAyLTE1LjI1OCA1MS42MS0xNS4yNTggNTEuNjEtMS42OS0wLjEwMi00LjE0Ny0wLjIwNS03LjE2OC0wLjIwNS0xMi41NDQgMC0zNi43NjIgMS45OTctNTcuNTQ5IDE1LjQxMS0yNS40OTggMTYuMzg0LTM4LjQgNDQuMjg4LTM4LjQgODIuODkzIDAgMTA5LjEwNyAxMTkuMTQyIDExMy41MSAxMjAuMzIgMTEzLjYxM2gxMTguOTg5di0yLjYxMWMwLTEzLjMxMi0yMy45MS0xNS45MjMtNDAuMTkyLTE4LjEyNS01LjUzLTAuODE5LTE2LjY0LTEuODk0LTE5Ljc2My0zLjQ4MiAzMC4xNTctMTYuMTI4IDM1LjAyMS00MS40MjEgMzUuMDIxLTc5LjEwNCAwLTQyLjkwNi0xNi43OTQtNjUuNTg3LTM0LjYxMS04MS41MS0xMS4wNTktOS44ODItMTkuNzEyLTE3LjYxMy0xOS43MTItMjguMDA2IDAtMTAuMTg5IDExLjg3OC0yMC41ODIgMjUuNzAyLTMyLjcxNyAyMi41NzktMTkuOTE3IDUzLjU1NS00Ny4wMDIgNTMuNTU1LTkyLjcyMyAwLTQ3LjI1OC0yMC4zMjYtODEuMDUwLTYwLjQxNi0xMDAuNDU0ek03NDIuNCA0NjAuOGgtNzYuOHYtNzYuOGgtNTEuMnY3Ni44aC03Ni44djUxLjJoNzYuOHY3Ni44aDUxLjJ2LTc2LjhoNzYuOHYtNTEuMnpNNDIxLjAxOCA0MDEuOTJjLTIuNjYyIDAtNS4zMjUtMC4xMDItOC4wMzgtMC4zMDctMjIuNzMzLTEuNjktNDMuNzI1LTEwLjE4OS01OC44OC0yNC4wMTMtMTUuMDUzLTEzLjYxOS0yMi43MzMtMzAuODIyLTIxLjY1OC00OC4xNzkgMi4zMDQtMzYuNDAzIDQxLjM3LTU3LjcwMiA4OC44MzItNTQuMzIzIDQ2LjY5NCAzLjM3OSA3Ny44MjQgMzAuMzEgNzUuNTcxIDY2LjcxNC0yLjE1IDM0LjIwMi0zMS44OTggNjAuMTA5LTc1LjgyNyA2MC4xMDl6TTQ2NS43NjYgNTk5LjgwOGMtMTIuMzkgNDMuNTItMzIuMzU4IDU2LjQyMi02My4zODYgNTYuNDIyLTMuMzI4IDAtNi43MDctMC41MTItOS45MzMtMS4zODItMTMuNDY2LTMuODQtMjQuMTY2LTE1LjA1My0zMC4xMDYtMzEuNzQ0LTYuMDkzLTE2Ljg5Ni02LjQ1MS0zNC41MDktMS4yMjktNTQuNTc5IDkuNDcyLTM1Ljg5MSAzNC45Ny02MS45MDEgNjAuNjcyLTYxLjkwMSAzLjM3OSAwIDYuNzU4IDAuNDEgOS45MzMgMS4zODIgMjguMTA5IDcuODg1IDQ1LjcyMiA1MC43OSAzNC4wNDggOTEuODAyeiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU5MDY7IiBnbHlwaC1uYW1lPSJwaW50ZXJlc3Qtd2l0aC1jaXJjbGUiIGRhdGEtdGFncz0icGludGVyZXN0LXdpdGgtY2lyY2xlIiBkPSJNNTEyIDk1Mi4zMmMtMjcxLjQ2MiAwLTQ5MS41Mi0yMjAuMDU4LTQ5MS41Mi00OTEuNTJzMjIwLjA1OC00OTEuNTIgNDkxLjUyLTQ5MS41MiA0OTEuNTIgMjIwLjA1OCA0OTEuNTIgNDkxLjUyLTIyMC4wNTggNDkxLjUyLTQ5MS41MiA0OTEuNTJ6TTU0NS42MzggMzQ0LjMyYy0zMS41MzkgMi40MDYtNDQuNzQ5IDE4LjAyMi02OS40MjcgMzIuOTczLTEzLjU2OC03MS4yMTktMzAuMTU3LTEzOS41Mi03OS4zMDktMTc1LjIwNi0xNS4yMDYgMTA3LjcyNSAyMi4yMjEgMTg4LjUxOCAzOS42MjkgMjc0LjM4MS0yOS42NDUgNDkuOTIgMy41MzMgMTUwLjMyMyA2Ni4wOTkgMTI1LjY0NSA3Ni45NTQtMzAuNTE1LTY2LjY2Mi0xODUuNiAyOS43NDctMjA1LjAwNSAxMDAuNjU5LTIwLjE3MyAxNDEuNzczIDE3NC42OTQgNzkuMzYgMjM3Ljk3OC05MC4yMTQgOTEuNDk0LTI2Mi41MDIgMi4wOTktMjQxLjMwNi0xMjguODcgNS4xMi0zMiAzOC4yNDYtNDEuNzI4IDEzLjIxLTg1LjkxNC01Ny43MDIgMTIuOC03NC45NTcgNTguMzE3LTcyLjcwNCAxMTguOTg5IDMuNTMzIDk5LjMyOCA4OS4yNDIgMTY4LjkwOSAxNzUuMTU1IDE3OC40ODMgMTA4LjY5OCAxMi4wODMgMjEwLjY4OC0zOS44ODUgMjI0LjgxOS0xNDIuMTgyIDE1LjgyMS0xMTUuNDA1LTQ5LjEwMS0yNDAuMjgyLTE2NS4yNzQtMjMxLjI3eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU5MDc7IiBnbHlwaC1uYW1lPSJ0d2l0dGVyLXdpdGgtY2lyY2xlIiBkYXRhLXRhZ3M9InR3aXR0ZXItd2l0aC1jaXJjbGUiIGQ9Ik01MTIgOTUyLjMyYy0yNzEuNDYyIDAtNDkxLjUyLTIyMC4wNTgtNDkxLjUyLTQ5MS41MnMyMjAuMDU4LTQ5MS41MiA0OTEuNTItNDkxLjUyIDQ5MS41MiAyMjAuMDU4IDQ5MS41MiA0OTEuNTItMjIwLjA1OCA0OTEuNTItNDkxLjUyIDQ5MS41MnpNNzExLjkzNiA1NDkuNjgzYzAuMjA1LTQuMTk4IDAuMjU2LTguMzk3IDAuMjU2LTEyLjQ5MyAwLTEyOC05Ny4zMzEtMjc1LjUwNy0yNzUuNDA1LTI3NS41MDctNTQuNjgyIDAtMTA1LjU3NCAxNS45NzQtMTQ4LjM3OCA0My41MiA3LjUyNi0wLjkyMiAxNS4yNTgtMS4yOCAyMy4wOTEtMS4yOCA0NS4zNjMgMCA4Ny4wOTEgMTUuNDExIDEyMC4yMTggNDEuNDIxLTQyLjM0MiAwLjgxOS03OC4wODAgMjguNzc0LTkwLjQxOSA2Ny4xNzQgNS44ODgtMS4wNzUgMTEuOTMtMS42OSAxOC4xNzYtMS42OSA4LjgwNiAwIDE3LjQwOCAxLjE3OCAyNS40OTggMy4zNzktNDQuMjg4IDguOTA5LTc3LjY3IDQ4LjAyNi03Ny42NyA5NC45MjV2MS4xNzhjMTMuMDU2LTcuMjE5IDI4LjAwNi0xMS42MjIgNDMuODc4LTEyLjEzNC0yNi4wMTAgMTcuNDA4LTQzLjA1OSA0Ny4wMDItNDMuMDU5IDgwLjY0IDAgMTcuNzE1IDQuNzYyIDM0LjQwNiAxMy4xMDcgNDguNjkxIDQ3Ljc3LTU4LjU3MyAxMTkuMDQwLTk3LjA3NSAxOTkuNTI2LTEwMS4yMjItMS42OSA3LjExNy0yLjUwOSAxNC40OS0yLjUwOSAyMi4xMTggMCA1My40MDIgNDMuMzE1IDk2LjgxOSA5Ni44MTkgOTYuODE5IDI3LjgwMiAwIDUyLjk5Mi0xMS43NzYgNzAuNjU2LTMwLjYxOCAyMi4wNjcgNC40MDMgNDIuNzUyIDEyLjM5IDYxLjQ0IDIzLjUwMS03LjIxOS0yMi41NzktMjIuNTI4LTQxLjU3NC00Mi41NDctNTMuNjA2IDE5LjYxIDIuNDA2IDM4LjI0NiA3LjU3OCA1NS42MDMgMTUuMzA5LTEyLjk1NC0xOS40MDUtMjkuMzg5LTM2LjUwNi00OC4yODItNTAuMTI1eiIgLz4KPGdseXBoIHVuaWNvZGU9IiYjeGU5MDg7IiBnbHlwaC1uYW1lPSJtZXNzYWdlLWNpcmNsZSIgZGF0YS10YWdzPSJtZXNzYWdlLWNpcmNsZSIgZD0iTTkzOC42NjcgNDQ4LjEyOHYyMS4yMDVjMCAwLjcyNS0wLjA0MyAxLjYyMS0wLjA4NSAyLjQ3NS01LjgwMyA5OS43NTUtNDcuNDg4IDE5MC4zMzYtMTEyLjcyNSAyNTguMTc2LTY4LjM1MiA3MS4xMjUtMTYyLjczMSAxMTcuNDE5LTI2OC44NDMgMTIzLjI2NC0wLjY4MyAwLjA0My0xLjUzNiAwLjA4NS0yLjM0NyAwLjA4NWgtMjAuODY0Yy01OS45NDcgMC42ODMtMTIyLjk2NS0xMy4yMjctMTgxLjkzMS00My4wMDgtNTIuMTgxLTI2LjQ5Ni05Ny43NDktNjMuNDg4LTEzMy45MzEtMTA4LjE2LTU2LjQwNS02OS43MTctODkuODk5LTE1OC4wODAtODkuOTQxLTI1My42OTYtMC41OTctNTQuNCAxMC43OTUtMTExLjM2IDM1LjE1Ny0xNjUuNDE5bC03NS42MDUtMjI2Ljg1OWMtMi44MTYtOC4zNjMtMy4wNzItMTcuODM1IDAtMjYuOTY1IDcuNDY3LTIyLjM1NyAzMS42MTYtMzQuNDMyIDUzLjk3My0yNi45NjVsMjI2LjczMSA3NS41NjNjNDkuNDkzLTIyLjQ4NSAxMDUuOTg0LTM1LjI0MyAxNjUuMzc2LTM1LjExNSA1OC41MzkgMC4zODQgMTE1Ljc5NyAxMy4xNDEgMTY4LjE0OSAzNi45NDkgODEuNTc5IDM3LjE2MyAxNTEuMDQwIDEwMS4yNDggMTkzLjc0OSAxODYuNjY3IDI3LjQ3NyA1My4yOTEgNDMuMzA3IDExNS44NCA0My4xMzYgMTgxLjgwM3pNODUzLjMzMyA0NDcuODcyYzAuMTI4LTUyLjI2Ny0xMi40NTktMTAxLjMzMy0zMy42NjQtMTQyLjQ2NC0zNC4xNzYtNjguMzUyLTg4LjgzMi0xMTguODI3LTE1My4yNTktMTQ4LjEzOS00MS4zODctMTguODU5LTg2LjgyNy0yOC45NzEtMTMzLjM3Ni0yOS4yNjktNTIuMDk2LTAuMTI4LTEwMS4xNjMgMTIuNDU5LTE0Mi4yOTMgMzMuNjY0LTEwLjYyNCA1LjUwNC0yMi41MjggNi4wNTktMzMuMDY3IDIuNTZsLTE2Mi4yNjEtNTQuMTAxIDU0LjEwMSAxNjIuMjYxYzMuNzU1IDExLjIyMSAyLjU2IDIyLjkxMi0yLjM4OSAzMi43MjUtMjMuNTUyIDQ2LjY3Ny0zNC4zMDQgOTYuMTcxLTMzLjc5MiAxNDIuNDIxIDAuMDQzIDc2LjMzMSAyNi40MTEgMTQ1LjkyIDcwLjk1NSAyMDAuOTE3IDI4LjYyOSAzNS4zNzEgNjQuNzY4IDY0LjcyNSAxMDYuMjQgODUuNzYgNDYuNTkyIDIzLjU1MiA5Ni4wODUgMzQuMzA0IDE0Mi4zMzYgMzMuNzkyaDE5LjQ1NmM4My43MTItNC41NjUgMTU4LjAzNy00MS4wMDMgMjEyLjAxMS05Ny4xNTIgNTEuMjg1LTUzLjM3NiA4NC4xMzktMTI0LjQxNiA4OS4wMDMtMjAyLjc5NXoiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlOTA5OyIgZ2x5cGgtbmFtZT0ibWF4aW1pemUtMiIgZGF0YS10YWdzPSJtYXhpbWl6ZS0yIiBkPSJNNzkzLjAwMyA3NjhsLTIyNS44MzUtMjI1LjgzNWMtMTYuNjgzLTE2LjY4My0xNi42ODMtNDMuNjkxIDAtNjAuMzMxczQzLjY5MS0xNi42ODMgNjAuMzMxIDBsMjI1LjgzNSAyMjUuODM1di0xNTMuMDAzYzAtMjMuNTUyIDE5LjExNS00Mi42NjcgNDIuNjY3LTQyLjY2N3M0Mi42NjcgMTkuMTE1IDQyLjY2NyA0Mi42Njd2MjU2YzAgNS44MDMtMS4xNTIgMTEuMzA3LTMuMjQzIDE2LjM0MXMtNS4xNjMgOS43MjgtOS4yMTYgMTMuNzgxYy0wLjA0MyAwLjA0My0wLjA0MyAwLjA0My0wLjA4NSAwLjA4NS0zLjkyNSAzLjkyNS04LjYxOSA3LjA4My0xMy43ODEgOS4yMTYtNS4wMzUgMi4wOTEtMTAuNTM5IDMuMjQzLTE2LjM0MSAzLjI0M2gtMjU2Yy0yMy41NTIgMC00Mi42NjctMTkuMTE1LTQyLjY2Ny00Mi42NjdzMTkuMTE1LTQyLjY2NyA0Mi42NjctNDIuNjY3ek0yMzAuOTk3IDg1LjMzNGwyMjUuODM1IDIyNS44MzVjMTYuNjgzIDE2LjY4MyAxNi42ODMgNDMuNjkxIDAgNjAuMzMxcy00My42OTEgMTYuNjgzLTYwLjMzMSAwbC0yMjUuODM1LTIyNS44MzV2MTUzLjAwM2MwIDIzLjU1Mi0xOS4xMTUgNDIuNjY3LTQyLjY2NyA0Mi42NjdzLTQyLjY2Ny0xOS4xMTUtNDIuNjY3LTQyLjY2N3YtMjU2YzAtMjMuNTUyIDE5LjExNS00Mi42NjcgNDIuNjY3LTQyLjY2N2gyNTZjMjMuNTUyIDAgNDIuNjY3IDE5LjExNSA0Mi42NjcgNDIuNjY3cy0xOS4xMTUgNDIuNjY3LTQyLjY2NyA0Mi42Njd6IiAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTkwYTsiIGdseXBoLW5hbWU9Im1pbmltaXplLTIiIGRhdGEtdGFncz0ibWluaW1pemUtMiIgZD0iTTcwMC4zMzEgNTU0LjY2N2wyMjUuODM1IDIyNS44MzVjMTYuNjgzIDE2LjY4MyAxNi42ODMgNDMuNjkxIDAgNjAuMzMxcy00My42OTEgMTYuNjgzLTYwLjMzMSAwbC0yMjUuODM1LTIyNS44MzV2MTUzLjAwM2MwIDIzLjU1Mi0xOS4xMTUgNDIuNjY3LTQyLjY2NyA0Mi42NjdzLTQyLjY2Ny0xOS4xMTUtNDIuNjY3LTQyLjY2N3YtMjU2YzAtNS44MDMgMS4xNTItMTEuMzA3IDMuMjQzLTE2LjM0MXM1LjE2My05LjcyOCA5LjIxNi0xMy43ODFjMC4wNDMtMC4wNDMgMC4wNDMtMC4wNDMgMC4wODUtMC4wODUgMy45MjUtMy45MjUgOC42MTktNy4wODMgMTMuNzgxLTkuMjE2IDUuMDM1LTIuMDkxIDEwLjUzOS0zLjI0MyAxNi4zNDEtMy4yNDNoMjU2YzIzLjU1MiAwIDQyLjY2NyAxOS4xMTUgNDIuNjY3IDQyLjY2N3MtMTkuMTE1IDQyLjY2Ny00Mi42NjcgNDIuNjY3ek0xNTguMTY1IDEyLjUwMmwyMjUuODM1IDIyNS44MzV2LTE1My4wMDNjMC0yMy41NTIgMTkuMTE1LTQyLjY2NyA0Mi42NjctNDIuNjY3czQyLjY2NyAxOS4xMTUgNDIuNjY3IDQyLjY2N3YyNTZjMCA1LjgwMy0xLjE1MiAxMS4zMDctMy4yNDMgMTYuMzQxcy01LjE2MyA5LjcyOC05LjIxNiAxMy43ODFjLTAuMDQzIDAuMDQzLTAuMDQzIDAuMDQzLTAuMDg1IDAuMDg1LTQuMDk2IDQuMDUzLTguNzg5IDcuMTI1LTEzLjc4MSA5LjIxNi01LjAzNSAyLjA5MS0xMC41MzkgMy4yNDMtMTYuMzQxIDMuMjQzaC0yNTZjLTIzLjU1MiAwLTQyLjY2Ny0xOS4xMTUtNDIuNjY3LTQyLjY2N3MxOS4xMTUtNDIuNjY3IDQyLjY2Ny00Mi42NjdoMTUzLjAwM2wtMjI1LjgzNS0yMjUuODM1Yy0xNi42ODMtMTYuNjgzLTE2LjY4My00My42OTEgMC02MC4zMzFzNDMuNjkxLTE2LjY4MyA2MC4zMzEgMHoiIC8+CjwvZm9udD48L2RlZnM+PC9zdmc+#lg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.lg-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "lg" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lg-container {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.lg-next,
+.lg-prev {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  color: #999;
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  margin-top: -10px;
+  padding: 8px 10px 9px;
+  position: absolute;
+  top: 50%;
+  z-index: 1084;
+  outline: none;
+  border: none;
+}
+.lg-next.disabled,
+.lg-prev.disabled {
+  opacity: 0 !important;
+  cursor: default;
+}
+.lg-next:hover:not(.disabled),
+.lg-prev:hover:not(.disabled) {
+  color: #fff;
+}
+.lg-single-item .lg-next,
+.lg-single-item .lg-prev {
+  display: none;
+}
+
+.lg-next {
+  right: 20px;
+}
+.lg-next:before {
+  content: "\e095";
+}
+
+.lg-prev {
+  left: 20px;
+}
+.lg-prev:after {
+  content: "\e094";
+}
+@keyframes lg-right-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes lg-left-end {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.lg-outer.lg-right-end .lg-object {
+  animation: lg-right-end 0.3s;
+  position: relative;
+}
+.lg-outer.lg-left-end .lg-object {
+  animation: lg-left-end 0.3s;
+  position: relative;
+}
+
+.lg-toolbar {
+  z-index: 1082;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.lg-media-overlap .lg-toolbar {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.lg-toolbar .lg-icon {
+  color: #999;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  height: 47px;
+  line-height: 27px;
+  padding: 10px 0;
+  text-align: center;
+  width: 50px;
+  text-decoration: none !important;
+  outline: medium none;
+  will-change: color;
+  transition: color 0.2s linear;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.lg-toolbar .lg-icon.lg-icon-18 {
+  font-size: 18px;
+}
+.lg-toolbar .lg-icon:hover {
+  color: #fff;
+}
+.lg-toolbar .lg-close:after {
+  content: "\e070";
+}
+.lg-toolbar .lg-maximize {
+  font-size: 22px;
+}
+.lg-toolbar .lg-maximize:after {
+  content: "\e90a";
+}
+.lg-toolbar .lg-download:after {
+  content: "\e0f2";
+}
+
+.lg-sub-html {
+  color: #eee;
+  font-size: 16px;
+  padding: 10px 40px;
+  text-align: center;
+  z-index: 1080;
+  opacity: 0;
+  transition: opacity 0.2s ease-out 0s;
+}
+.lg-sub-html h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+.lg-sub-html p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+.lg-sub-html a {
+  color: inherit;
+}
+.lg-sub-html a:hover {
+  text-decoration: underline;
+}
+.lg-media-overlap .lg-sub-html {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+.lg-item .lg-sub-html {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.lg-error-msg {
+  font-size: 14px;
+  color: #999;
+}
+
+.lg-counter {
+  color: #999;
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 12px;
+  height: 47px;
+  vertical-align: middle;
+}
+
+.lg-closing .lg-toolbar,
+.lg-closing .lg-prev,
+.lg-closing .lg-next,
+.lg-closing .lg-sub-html {
+  opacity: 0;
+  transition: transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, color 0.08 linear;
+}
+
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-img-wrap,
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-video-cont,
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-media-cont {
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  will-change: transform, opacity;
+  transition: transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;
+}
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-complete .lg-img-wrap,
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-complete .lg-video-cont,
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-complete .lg-media-cont {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.lg-icon:focus-visible {
+  color: #fff;
+  border-radius: 3px;
+  outline: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+.lg-toolbar .lg-icon:focus-visible {
+  border-radius: 8px;
+  outline-offset: -5px;
+}
+
+.lg-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lg-container {
+  display: none;
+  outline: none;
+}
+.lg-container.lg-show {
+  display: block;
+}
+
+.lg-on {
+  scroll-behavior: unset;
+}
+
+.lg-overlay-open {
+  overflow: hidden;
+}
+
+.lg-toolbar,
+.lg-prev,
+.lg-next,
+.lg-pager-outer,
+.lg-hide-sub-html .lg-sub-html {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
+}
+
+.lg-show-in .lg-toolbar,
+.lg-show-in .lg-prev,
+.lg-show-in .lg-next,
+.lg-show-in .lg-pager-outer {
+  opacity: 1;
+}
+.lg-show-in.lg-hide-sub-html .lg-sub-html {
+  opacity: 1;
+}
+.lg-show-in .lg-hide-items .lg-prev {
+  opacity: 0;
+  transform: translate3d(-10px, 0, 0);
+}
+.lg-show-in .lg-hide-items .lg-next {
+  opacity: 0;
+  transform: translate3d(10px, 0, 0);
+}
+.lg-show-in .lg-hide-items .lg-toolbar {
+  opacity: 0;
+  transform: translate3d(0, -10px, 0);
+}
+.lg-show-in .lg-hide-items.lg-hide-sub-html .lg-sub-html {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+}
+
+.lg-outer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  text-align: left;
+  opacity: 0.001;
+  outline: none;
+  will-change: auto;
+  overflow: hidden;
+  transition: opacity 0.15s ease 0s;
+}
+.lg-outer * {
+  box-sizing: border-box;
+}
+.lg-outer.lg-zoom-from-image {
+  opacity: 1;
+}
+.lg-outer.lg-visible {
+  opacity: 1;
+}
+.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-prev-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-next-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-current {
+  transition-duration: inherit !important;
+  transition-timing-function: inherit !important;
+}
+.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-current {
+  transition-duration: 0s !important;
+  opacity: 1;
+}
+.lg-outer.lg-grab img.lg-object {
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.lg-outer.lg-grabbing img.lg-object {
+  cursor: move;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+.lg-outer .lg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.lg-outer .lg-inner {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0s;
+  white-space: nowrap;
+}
+.lg-outer .lg-item {
+  display: none !important;
+}
+.lg-outer .lg-item:not(.lg-start-end-progress) {
+  background: url(../images/loading.fcba57cd.gif) no-repeat scroll center center transparent;
+}
+.lg-outer.lg-css3 .lg-prev-slide,
+.lg-outer.lg-css3 .lg-current,
+.lg-outer.lg-css3 .lg-next-slide {
+  display: inline-block !important;
+}
+.lg-outer.lg-css .lg-current {
+  display: inline-block !important;
+}
+.lg-outer .lg-item,
+.lg-outer .lg-img-wrap {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.lg-outer .lg-item:before,
+.lg-outer .lg-img-wrap:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.lg-outer .lg-img-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  white-space: nowrap;
+  font-size: 0;
+}
+.lg-outer .lg-item.lg-complete {
+  background-image: none;
+}
+.lg-outer .lg-item.lg-current {
+  z-index: 1060;
+}
+.lg-outer .lg-object {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.lg-outer .lg-empty-html.lg-sub-html,
+.lg-outer .lg-empty-html .lg-sub-html {
+  display: none;
+}
+.lg-outer.lg-hide-download .lg-download {
+  opacity: 0.75;
+  pointer-events: none;
+}
+.lg-outer .lg-first-slide .lg-dummy-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.lg-outer.lg-components-open:not(.lg-zoomed) .lg-components {
+  transform: translate3d(0, 0%, 0);
+  opacity: 1;
+}
+.lg-outer.lg-components-open:not(.lg-zoomed) .lg-sub-html {
+  opacity: 1;
+  transition: opacity 0.2s ease-out 0.15s;
+}
+.lg-outer .lg-media-cont {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.lg-outer .lg-media-cont .lg-object {
+  width: 100% !important;
+  height: 100% !important;
+}
+.lg-outer .lg-has-iframe .lg-media-cont {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.lg-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;
+  background-color: #000;
+  opacity: 0;
+  will-change: auto;
+  transition: opacity 333ms ease-in 0s;
+}
+.lg-backdrop.in {
+  opacity: 1;
+}
+
+.lg-css3.lg-no-trans .lg-prev-slide,
+.lg-css3.lg-no-trans .lg-next-slide,
+.lg-css3.lg-no-trans .lg-current {
+  transition: none 0s ease 0s !important;
+}
+.lg-css3.lg-use-css3 .lg-item {
+  backface-visibility: hidden;
+}
+.lg-css3.lg-fade .lg-item {
+  opacity: 0;
+}
+.lg-css3.lg-fade .lg-item.lg-current {
+  opacity: 1;
+}
+.lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {
+  transition: opacity 0.1s ease 0s;
+}
+.lg-css3.lg-use-css3 .lg-item.lg-start-progress {
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+.lg-css3.lg-use-css3 .lg-item.lg-start-end-progress {
+  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s;
+}
+.lg-css3.lg-slide.lg-use-css3 .lg-item {
+  opacity: 0;
+}
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {
+  transform: translate3d(-100%, 0, 0);
+}
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide {
+  transform: translate3d(100%, 0, 0);
+}
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
+  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+
+.lg-container {
+  display: none;
+}
+.lg-container.lg-show {
+  display: block;
+}
+.lg-container.lg-dragging-vertical .lg-backdrop {
+  transition-duration: 0s !important;
+}
+.lg-container.lg-dragging-vertical .lg-css3 .lg-item.lg-current {
+  transition-duration: 0s !important;
+  opacity: 1;
+}
+
+.lg-inline .lg-backdrop,
+.lg-inline .lg-outer {
+  position: absolute;
+}
+.lg-inline .lg-backdrop {
+  z-index: 1;
+}
+.lg-inline .lg-outer {
+  z-index: 2;
+}
+.lg-inline .lg-maximize:after {
+  content: "\e909";
+}
+
+.lg-components {
+  transform: translate3d(0, 100%, 0);
+  will-change: transform;
+  transition: transform 0.35s ease-out 0s;
+  z-index: 1080;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=lightgallery.css.map */
+
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../plugin-slug/node_modules/lightgallery/css/lg-video.css ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.lg-outer .lg-video-cont {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.lg-outer .lg-video-cont .lg-object {
+  width: 100% !important;
+  height: 100% !important;
+}
+.lg-outer .lg-has-iframe .lg-video-cont {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+.lg-outer .lg-video-object {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.lg-outer .lg-video-poster {
+  z-index: 1;
+}
+.lg-outer .lg-has-video .lg-video-object {
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s ease-in;
+}
+.lg-outer .lg-has-video.lg-video-loaded .lg-video-poster,
+.lg-outer .lg-has-video.lg-video-loaded .lg-video-play-button {
+  opacity: 0 !important;
+}
+.lg-outer .lg-has-video.lg-video-loaded .lg-video-object {
+  opacity: 1;
+}
+
+@keyframes lg-play-stroke {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes lg-play-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.lg-video-play-button {
+  width: 18%;
+  max-width: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(1);
+  will-change: opacity, transform;
+  transition: transform 0.25s cubic-bezier(0.17, 0.88, 0.32, 1.28), opacity 0.1s;
+}
+.lg-video-play-button:hover .lg-video-play-icon-bg,
+.lg-video-play-button:hover .lg-video-play-icon {
+  opacity: 1;
+}
+
+.lg-video-play-icon-bg {
+  fill: none;
+  stroke-width: 3%;
+  stroke: #fcfcfc;
+  opacity: 0.6;
+  will-change: opacity;
+  transition: opacity 0.12s ease-in;
+}
+
+.lg-video-play-icon-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  fill: none;
+  stroke-width: 3%;
+  stroke: rgba(30, 30, 30, 0.9);
+  stroke-opacity: 1;
+  stroke-linecap: round;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+}
+
+.lg-video-play-icon {
+  position: absolute;
+  width: 25%;
+  max-width: 120px;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  opacity: 0.6;
+  will-change: opacity;
+  transition: opacity 0.12s ease-in;
+}
+.lg-video-play-icon .lg-video-play-icon-inner {
+  fill: #fcfcfc;
+}
+
+.lg-video-loading .lg-video-play-icon-circle {
+  animation: lg-play-rotate 2s linear 0.25s infinite, lg-play-stroke 1.5s ease-in-out 0.25s infinite;
+}
+
+.lg-video-loaded .lg-video-play-button {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+/*# sourceMappingURL=lg-video.css.map */
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/masonry-video-grid/editor.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vgblk-masonry-video-grid-one .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .mvg-icon {
+  fill: #fff !important;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/parallax-row-video-gallery/editor.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vgblk-parallax-row-video-gallery .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .pr_video-gallery {
+  fill: #fff !important;
+}
+
+.block-hint,
+.block-warning {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  padding: 6px 0;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Hint style (💡) */
+.block-hint {
+  color: #136ef5;
+  background-color: rgba(19, 110, 245, 0.08);
+}
+
+/* Warning style (⚠️) */
+.block-warning {
+  color: #b23b00;
+  background-color: rgba(255, 180, 0, 0.15);
+}
+
+/* Add icons automatically */
+.block-hint::before,
+.block-warning::before {
+  margin-right: 0.4em;
+  font-size: 1.1em;
+}
+
+/* Icon content */
+.block-hint::before {
+  content: "💡";
+}
+
+.block-warning::before {
+  content: "⚠️";
+}
+
+/* Make inner <p> clean */
+.block-hint p,
+.block-warning p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/slider-autoplay-video/editor.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vgblk-slider-autoplay-video .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .sav-gallery {
+  fill: #fff !important;
+}
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!../plugin-slug/node_modules/swiper/swiper.css ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/**
+ * Swiper 11.2.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2025 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: January 10, 2025
+ */
+
+/* FONT_START */
+@font-face {
+  font-family: 'swiper-icons';
+  src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+  font-weight: 400;
+  font-style: normal;
+}
+/* FONT_END */
+:root {
+  --swiper-theme-color: #007aff;
+  /*
+  --swiper-preloader-color: var(--swiper-theme-color);
+  --swiper-wrapper-transition-timing-function: initial;
+  */
+}
+:host {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  display: block;
+}
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  box-sizing: content-box;
+}
+.swiper-android .swiper-slide,
+.swiper-ios .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-horizontal {
+  touch-action: pan-y;
+}
+.swiper-vertical {
+  touch-action: pan-x;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+/* Auto Height */
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* 3D Effects */
+.swiper-3d.swiper-css-mode .swiper-wrapper {
+  perspective: 1200px;
+}
+.swiper-3d .swiper-wrapper {
+  transform-style: preserve-3d;
+}
+.swiper-3d {
+  perspective: 1200px;
+}
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-cube-shadow {
+  transform-style: preserve-3d;
+}
+/* CSS Mode */
+.swiper-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+.swiper-css-mode.swiper-horizontal > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+.swiper-css-mode.swiper-vertical > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+  scroll-snap-type: none;
+}
+.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: none;
+}
+.swiper-css-mode.swiper-centered > .swiper-wrapper::before {
+  content: '';
+  flex-shrink: 0;
+  order: 9999;
+}
+.swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: center center;
+  scroll-snap-stop: always;
+}
+.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+  margin-inline-start: var(--swiper-centered-offset-before);
+}
+.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+  height: 100%;
+  min-height: 1px;
+  width: var(--swiper-centered-offset-after);
+}
+.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+  margin-block-start: var(--swiper-centered-offset-before);
+}
+.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+  width: 100%;
+  min-width: 1px;
+  height: var(--swiper-centered-offset-after);
+}
+/* Slide styles start */
+/* 3D Shadows */
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.swiper-3d .swiper-slide-shadow {
+  background: rgba(0, 0, 0, 0.15);
+}
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-bottom {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  transform-origin: 50%;
+  box-sizing: border-box;
+  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,
+.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader {
+  animation: swiper-preloader-spin 1s infinite linear;
+}
+.swiper-lazy-preloader-white {
+  --swiper-preloader-color: #fff;
+}
+.swiper-lazy-preloader-black {
+  --swiper-preloader-color: #000;
+}
+@keyframes swiper-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Slide styles end */
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-carousel-gallery/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vcg-video-carousel-gallery .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .vcg-video-carousel-icon {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-playlist-gallery/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-b-blocks-test-purpose .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .block-editor-block-icon svg {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-slider/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vgblk-video-slider .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .vs-gallery {
+  stroke: #fff !important;
+  stroke-width: 2;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-testimonial-section/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-vts-video-testimonial-section .selectHelp {
+  color: #616063;
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+}
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected .video-testimonial-section {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+
+/*# sourceMappingURL=index.css.map*/

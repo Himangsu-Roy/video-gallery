@@ -1,0 +1,234 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/parallax-row-video-gallery/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-vgblk-parallax-row-video-gallery * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.wp-block-vgblk-parallax-row-video-gallery .wp-block-prvg-parallax-row-video-gallery-pro {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.734);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wp-block-vgblk-parallax-row-video-gallery .parallax-gallery {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.wp-block-vgblk-parallax-row-video-gallery .parallax-row {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  flex-grow: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .parallax-row .video-track {
+  display: flex;
+  flex-grow: 1;
+  transition: transform 0.075s ease-out;
+  will-change: transform;
+}
+.wp-block-vgblk-parallax-row-video-gallery .parallax-row .video-wrapper {
+  display: flex;
+  flex: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  flex: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .video-element {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .video-gradient {
+  position: absolute;
+  inset: 0;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .overlay.visible {
+  opacity: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .overlay .overlay-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .overlay .overlay-center .play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .overlay .overlay-center .play-button .icon.play-offset {
+  margin-left: 0.25rem;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .info.visible {
+  top: 0;
+  opacity: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .info.hidden {
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .info .subtitle {
+  padding: 0;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .controls {
+  position: absolute;
+  display: flex;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .controls .control-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .progress-container .progress-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .progress-container .progress-bar {
+  height: 100%;
+  transition: width 0.1s ease-out;
+  z-index: 1;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .live-indicator {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .live-indicator .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+.wp-block-vgblk-parallax-row-video-gallery .video-player .live-indicator span {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.wp-block-vgblk-parallax-row-video-gallery .parallax-wrapper {
+  position: relative;
+}
+.wp-block-vgblk-parallax-row-video-gallery .lightbox-wrapper {
+  position: fixed;
+}
+.wp-block-vgblk-parallax-row-video-gallery .lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.wp-block-vgblk-parallax-row-video-gallery .lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+.wp-block-vgblk-parallax-row-video-gallery .lightbox-video {
+  width: 100%;
+  max-height: 80vh;
+  background: #000;
+}
+.wp-block-vgblk-parallax-row-video-gallery .lightbox-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vgb-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.vgb-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: vgb-spin 1s ease-in-out infinite;
+}
+
+@keyframes vgb-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=view.css.map*/

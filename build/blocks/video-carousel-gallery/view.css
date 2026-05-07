@@ -1,0 +1,343 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../plugin-slug/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../plugin-slug/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../plugin-slug/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/video-carousel-gallery/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-vgblk-video-carousel-gallery {
+  box-sizing: border-box;
+}
+.wp-block-vgblk-video-carousel-gallery * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.wp-block-vgblk-video-carousel-gallery .wp-block-vcg-video-carousel-gallery-pro {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.734);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner {
+  margin: 0 auto;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper {
+  overflow-x: auto;
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper:active {
+  cursor: grabbing;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-carousel-container .vcg-carousel-inner .vcg-carousel-scroll-wrapper .vcg-carousel-cards {
+  display: flex;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-loading .vcg-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid #d1d5db;
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: vcg-spin 1s linear infinite;
+}
+@keyframes vcg-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-video-preview {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9/16;
+  background-color: #111827;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-video-preview .vcg-video-element {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-video-preview .vcg-video-overlay {
+  position: absolute;
+  inset: 0;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-video-preview .vcg-video-overlay .vcg-play-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-video-preview .vcg-video-overlay .vcg-play-button .vcg-play-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #111827;
+  margin-left: 0.25rem;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card:hover .vcg-video-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card:hover .vcg-video-overlay .vcg-play-button {
+  transform: scale(1.1);
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-card-info {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-card-info .vcg-product-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-card-info .vcg-product-details {
+  flex: 1;
+  min-width: 0;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-card-info .vcg-product-details .vcg-product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-video-card .vcg-card-info .vcg-product-details .vcg-product-pricing {
+  display: flex;
+  align-items: center;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  touch-action: pan-y pinch-zoom;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox:active {
+  cursor: grabbing;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-close-button .vcg-close-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fff;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-left,
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-right {
+  display: none;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-left,
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-right {
+    display: block;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-left .vcg-preview-thumbnail,
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-right .vcg-preview-thumbnail {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-left .vcg-preview-thumbnail:hover,
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-right .vcg-preview-thumbnail:hover {
+  opacity: 0.75;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-left .vcg-preview-thumbnail img,
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-preview-right .vcg-preview-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-nav-button.vcg-nav-prev {
+  left: 1rem;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-nav-button.vcg-nav-next {
+  right: 1rem;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #111827;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-lightbox-video {
+  width: 100%;
+  height: 100%;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-mute-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-mute-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper {
+    padding: 0.75rem;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card {
+    padding: 0.75rem;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details {
+  flex: 1;
+  min-width: 0;
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details .vcg-product-info-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details .vcg-product-info-name {
+    font-size: 0.875rem;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details .vcg-product-info-pricing {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details .vcg-product-info-pricing .vcg-product-info-original {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-product-info-details .vcg-product-info-pricing .vcg-product-info-current {
+    font-size: 0.875rem;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-shop-button {
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-shop-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+.wp-block-vgblk-video-carousel-gallery .vcg-lightbox .vcg-lightbox-content .vcg-main-video-wrapper .vcg-video-container .vcg-product-info-wrapper .vcg-product-info-card .vcg-shop-button:hover {
+  background-color: #1f2937;
+}
+
+/*# sourceMappingURL=view.css.map*/

@@ -1,0 +1,914 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "vgblk/video-carousel-gallery",
+  "version": "1.0.0",
+  "title": "Video Carousel Gallery",
+  "category": "videoblocks",
+  "description": "A powerful tool to create and display beautiful video carousel in a carousel layout.",
+  "keywords": [
+    "Video Carousel Gallery",
+    "Video Carousel",
+    "Video Gallery",
+    "Video Slider",
+    "Video Gallery"
+  ],
+  "textdomain": "video-gallery",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "videos": {
+      "type": "array",
+      "default": [
+        {
+          "id": "1",
+          "title": "Title One",
+          "price": 99.99,
+          "original_price": 149.99,
+          "video": "https://www.pexels.com/download/video/34394664/",
+          "poster": "https://images.pexels.com/photos/30234047/pexels-photo-30234047.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=1",
+          "order_index": 1,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "2",
+          "title": "Title Two",
+          "price": 199.99,
+          "original_price": null,
+          "video": "https://www.pexels.com/download/video/17639418/",
+          "poster": "https://images.pexels.com/photos/25185919/pexels-photo-25185919.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=2",
+          "order_index": 2,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "3",
+          "title": "Title Three",
+          "price": 49.99,
+          "original_price": 79.99,
+          "video": "https://www.pexels.com/download/video/15215153/",
+          "poster": "https://images.pexels.com/photos/7364559/pexels-photo-7364559.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=3",
+          "order_index": 3,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "4",
+          "title": "Title Four",
+          "price": 299.99,
+          "original_price": 399.99,
+          "video": "https://www.pexels.com/download/video/30401710/",
+          "poster": "https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=4",
+          "order_index": 4,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "5",
+          "title": "Title Five",
+          "price": 449.99,
+          "original_price": null,
+          "video": "https://www.pexels.com/download/video/33766878/",
+          "poster": "https://images.pexels.com/photos/8034468/pexels-photo-8034468.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=5",
+          "order_index": 5,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "6",
+          "title": "Title Six",
+          "price": 129.99,
+          "original_price": 179.99,
+          "video": "https://www.pexels.com/download/video/16704982/",
+          "poster": "https://images.pexels.com/photos/29705626/pexels-photo-29705626.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=6",
+          "order_index": 6,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "7",
+          "title": "Title Seven",
+          "price": 159.99,
+          "original_price": null,
+          "video": "https://www.pexels.com/download/video/2875430/",
+          "poster": "https://images.pexels.com/photos/1366088/pexels-photo-1366088.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=7",
+          "order_index": 7,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "8",
+          "title": "Title Eight",
+          "price": 189.99,
+          "original_price": 249.99,
+          "video": "https://www.pexels.com/download/video/855687/",
+          "poster": "https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=8",
+          "order_index": 8,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "9",
+          "title": "Title Nine",
+          "price": 279.99,
+          "original_price": null,
+          "video": "https://www.pexels.com/download/video/13831201/",
+          "poster": "https://images.pexels.com/photos/35646001/pexels-photo-35646001.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=9",
+          "order_index": 9,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        },
+        {
+          "id": "10",
+          "title": "Title Ten",
+          "price": 79.99,
+          "original_price": 119.99,
+          "video": "https://www.pexels.com/download/video/31267759/",
+          "poster": "https://images.pexels.com/photos/11562252/pexels-photo-11562252.jpeg",
+          "product_image": "https://picsum.photos/800/600?random=10",
+          "order_index": 10,
+          "created_at": "2025-12-03T06:24:27.000Z",
+          "product_url": "https://bplugins.com/"
+        }
+      ]
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "gallery": {
+          "container": {
+            "maxWidth": 1280
+          },
+          "background": {
+            "show": true,
+            "color": "#000",
+            "gradient": "linear-gradient(to bottom right, #f9fafb, #f3f4f6)",
+            "type": "gradient"
+          },
+          "margin": {
+            "desktop": {
+              "top": "0rem",
+              "bottom": "0rem",
+              "left": "0rem",
+              "right": "0rem"
+            },
+            "tablet": {
+              "top": "0rem",
+              "bottom": "0rem",
+              "left": "0rem",
+              "right": "0rem"
+            },
+            "mobile": {
+              "top": "0rem",
+              "bottom": "0rem",
+              "left": "0rem",
+              "right": "0rem"
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "3rem",
+              "bottom": "3rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "tablet": {
+              "top": "3rem",
+              "bottom": "3rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "mobile": {
+              "top": "3rem",
+              "bottom": "3rem",
+              "left": "1rem",
+              "right": "1rem"
+            }
+          },
+          "border": {
+            "show": false,
+            "color": "#000",
+            "width": 0,
+            "style": "solid"
+          },
+          "borderRadius": {
+            "desktop": {
+              "top": "0px",
+              "right": "0px",
+              "left": "0px",
+              "bottom": "0px"
+            },
+            "tablet": {
+              "top": "0px",
+              "right": "0px",
+              "left": "0px",
+              "bottom": "0px"
+            },
+            "mobile": {
+              "top": "0px",
+              "right": "0px",
+              "left": "0px",
+              "bottom": "0px"
+            }
+          },
+          "shadow": [
+            {
+              "hOffset": "0px",
+              "vOffset": "0px",
+              "blur": "0px",
+              "spreed": "0px",
+              "color": "rgba(0, 0, 0, 0.1)",
+              "isInset": false
+            }
+          ]
+        },
+        "items": {
+          "gap": {
+            "desktop": "16px",
+            "tablet": "16px",
+            "mobile": "16px"
+          },
+          "width": {
+            "desktop": "200px",
+            "tablet": "200px",
+            "mobile": "200px"
+          },
+          "info": {
+            "title": {
+              "show": true,
+              "color": "#111827",
+              "typography": {
+                "fontSize": {
+                  "desktop": 14,
+                  "tablet": 14,
+                  "mobile": 14
+                },
+                "fontWeight": "600",
+                "lineHeight": 1.125
+              },
+              "margin": {
+                "desktop": {
+                  "top": "0px",
+                  "bottom": "4px",
+                  "left": "0px",
+                  "right": "0px"
+                },
+                "tablet": {
+                  "top": "0px",
+                  "bottom": "4px",
+                  "left": "0px",
+                  "right": "0px"
+                },
+                "mobile": {
+                  "top": "0px",
+                  "bottom": "4px",
+                  "left": "0px",
+                  "right": "0px"
+                }
+              }
+            },
+            "productPricing": {
+              "show": true,
+              "gap": {
+                "desktop": "8px",
+                "tablet": "8px",
+                "mobile": "8px"
+              },
+              "currentPrice": {
+                "show": true,
+                "color": "#111827",
+                "currencySize": {
+                  "desktop": "14px",
+                  "tablet": "14px",
+                  "mobile": "14px"
+                },
+                "typography": {
+                  "fontSize": {
+                    "desktop": 14,
+                    "tablet": 14,
+                    "mobile": 14
+                  },
+                  "fontWeight": "700",
+                  "lineHeight": 1.4
+                },
+                "margin": {
+                  "desktop": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  },
+                  "tablet": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  }
+                }
+              },
+              "originalPrice": {
+                "show": true,
+                "color": "#6b7280",
+                "currencySize": {
+                  "desktop": "12px",
+                  "tablet": "12px",
+                  "mobile": "12px"
+                },
+                "typography": {
+                  "fontSize": {
+                    "desktop": 12,
+                    "tablet": 12,
+                    "mobile": 12
+                  },
+                  "fontWeight": "300",
+                  "lineHeight": 1.625,
+                  "textDecoration": "line-through",
+                  "latterSpacing": "-0.1px"
+                },
+                "margin": {
+                  "desktop": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  },
+                  "tablet": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  },
+                  "mobile": {
+                    "top": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "right": "0px"
+                  }
+                }
+              }
+            },
+            "padding": {
+              "desktop": {
+                "top": "12px",
+                "bottom": "12px",
+                "left": "12px",
+                "right": "12px"
+              },
+              "tablet": {
+                "top": "12px",
+                "bottom": "12px",
+                "left": "12px",
+                "right": "12px"
+              },
+              "mobile": {
+                "top": "12px",
+                "bottom": "12px",
+                "left": "12px",
+                "right": "12px"
+              }
+            },
+            "gap": {
+              "desktop": "12px",
+              "tablet": "12px",
+              "mobile": "12px"
+            },
+            "borderRadius": {
+              "desktop": {
+                "top": "12px",
+                "right": "12px",
+                "left": "12px",
+                "bottom": "12px"
+              },
+              "tablet": {
+                "top": "12px",
+                "right": "12px",
+                "left": "12px",
+                "bottom": "12px"
+              },
+              "mobile": {
+                "top": "12px",
+                "right": "12px",
+                "left": "12px",
+                "bottom": "12px"
+              }
+            },
+            "productImage": {
+              "size": "2.5rem",
+              "borderRadius": {
+                "desktop": {
+                  "top": "8px",
+                  "bottom": "8px",
+                  "left": "8px",
+                  "right": "8px"
+                },
+                "tablet": {
+                  "top": "8px",
+                  "bottom": "8px",
+                  "left": "8px",
+                  "right": "8px"
+                },
+                "mobile": {
+                  "top": "8px",
+                  "bottom": "8px",
+                  "left": "8px",
+                  "right": "8px"
+                }
+              }
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "0rem",
+              "bottom": "1.5rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "tablet": {
+              "top": "0rem",
+              "bottom": "1.5rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "mobile": {
+              "top": "0rem",
+              "bottom": "1.5rem",
+              "left": "1rem",
+              "right": "1rem"
+            }
+          },
+          "preview": {
+            "overlayColor": "#00000033",
+            "borderRadius": {
+              "desktop": {
+                "top": "16px",
+                "right": "16px",
+                "left": "16px",
+                "bottom": "16px"
+              },
+              "tablet": {
+                "top": "16px",
+                "right": "16px",
+                "left": "16px",
+                "bottom": "16px"
+              },
+              "mobile": {
+                "top": "16px",
+                "right": "16px",
+                "left": "16px",
+                "bottom": "16px"
+              }
+            },
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "bottom": "12px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "bottom": "12px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "bottom": "12px",
+                "left": "0px",
+                "right": "0px"
+              }
+            }
+          },
+          "shadow": [
+            {
+              "hOffset": "0px",
+              "vOffset": "4px",
+              "blur": "10px",
+              "spreed": "0px",
+              "color": "rgba(0, 0, 0, 0.1)",
+              "isInset": false
+            }
+          ],
+          "hoverShadow": [
+            {
+              "hOffset": "0px",
+              "vOffset": "20px",
+              "blur": "25px",
+              "spreed": "-5px",
+              "color": "rgba(0, 0, 0, 0.1)",
+              "isInset": false
+            }
+          ],
+          "playBtn": {
+            "bg": "#ffffff33",
+            "bgHover": "#ffffff44",
+            "iconColor": "#fff",
+            "size": {
+              "desktop": "6rem",
+              "tablet": "6rem",
+              "mobile": "3rem"
+            },
+            "show": true,
+            "iconSize": {
+              "desktop": "3rem",
+              "tablet": "3rem",
+              "mobile": "1.5rem"
+            },
+            "borderRadius": {
+              "top": "50%",
+              "right": "50%",
+              "left": "50%",
+              "bottom": "50%"
+            },
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play icon play-adjusted\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg>"
+          },
+          "border": {
+            "show": false,
+            "color": "#000",
+            "width": 0,
+            "style": "solid"
+          }
+        },
+        "lightbox": {
+          "show": true,
+          "background": {
+            "color": "#000"
+          },
+          "borderRadius": {
+            "desktop": {
+              "top": "1rem",
+              "bottom": "1rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "tablet": {
+              "top": "1rem",
+              "bottom": "1rem",
+              "left": "1rem",
+              "right": "1rem"
+            },
+            "mobile": {
+              "top": "1rem",
+              "bottom": "1rem",
+              "left": "1rem",
+              "right": "1rem"
+            }
+          },
+          "gap": {
+            "desktop": "32px",
+            "tablet": "16px",
+            "mobile": "16px"
+          },
+          "sideWidth": {
+            "desktop": "192px",
+            "tablet": "100%",
+            "mobile": "100%"
+          },
+          "centerMaxWidth": {
+            "desktop": "448px",
+            "tablet": "100%",
+            "mobile": "100%"
+          },
+          "height": {
+            "desktop": "600px",
+            "tablet": "600px",
+            "mobile": "600px"
+          },
+          "buttons": {
+            "size": "40px",
+            "bgColor": "#ffffff1a",
+            "iconColor": "#ffffff",
+            "blur": 4,
+            "iconSize": "24px",
+            "borderRadius": {
+              "desktop": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              },
+              "tablet": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              },
+              "mobile": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              }
+            }
+          },
+          "infoWrapper": {
+            "padding": {
+              "desktop": {
+                "top": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem",
+                "right": "1.5rem"
+              },
+              "tablet": {
+                "top": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem",
+                "right": "1.5rem"
+              },
+              "mobile": {
+                "top": "1.5rem",
+                "bottom": "1.5rem",
+                "left": "1.5rem",
+                "right": "1.5rem"
+              }
+            },
+            "background": {
+              "gradient": "linear-gradient(to top, #000000cc, #00000066, transparent)",
+              "type": "gradient"
+            }
+          },
+          "productInfo": {
+            "background": {
+              "color": "#fffffff2"
+            },
+            "blur": 4,
+            "borderRadius": {
+              "desktop": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              },
+              "tablet": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              },
+              "mobile": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              }
+            },
+            "padding": {
+              "desktop": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              },
+              "tablet": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              },
+              "mobile": {
+                "top": "1rem",
+                "bottom": "1rem",
+                "left": "1rem",
+                "right": "1rem"
+              }
+            },
+            "gap": {
+              "desktop": "16px",
+              "tablet": "16px",
+              "mobile": "16px"
+            },
+            "productImage": {
+              "size": "4rem",
+              "borderRadius": {
+                "desktop": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                },
+                "tablet": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                },
+                "mobile": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                }
+              }
+            },
+            "title": {
+              "color": "#111827",
+              "typography": {
+                "fontSize": {
+                  "desktop": 18,
+                  "tablet": 18,
+                  "mobile": 18
+                },
+                "fontWeight": "600",
+                "lineHeight": 1.125
+              },
+              "margin": {
+                "desktop": {
+                  "top": "0",
+                  "bottom": "4px",
+                  "left": "0",
+                  "right": "0"
+                },
+                "tablet": {
+                  "top": "0",
+                  "bottom": "4px",
+                  "left": "0",
+                  "right": "0"
+                },
+                "mobile": {
+                  "top": "0",
+                  "bottom": "4px",
+                  "left": "0",
+                  "right": "0"
+                }
+              }
+            },
+            "productPricing": {
+              "gap": {
+                "desktop": "8px",
+                "tablet": "8px",
+                "mobile": "8px"
+              },
+              "currentPrice": {
+                "color": "#111827",
+                "currencySize": {
+                  "desktop": "16px",
+                  "tablet": "16px",
+                  "mobile": "16px"
+                },
+                "typography": {
+                  "fontSize": {
+                    "desktop": 16,
+                    "tablet": 16,
+                    "mobile": 16
+                  },
+                  "fontWeight": "700",
+                  "lineHeight": 1.4
+                }
+              },
+              "originalPrice": {
+                "color": "#6b7280",
+                "currencySize": {
+                  "desktop": "14px",
+                  "tablet": "14px",
+                  "mobile": "14px"
+                },
+                "typography": {
+                  "fontSize": {
+                    "desktop": 14,
+                    "tablet": 14,
+                    "mobile": 14
+                  },
+                  "fontWeight": "300",
+                  "lineHeight": 1.625,
+                  "textDecoration": "line-through",
+                  "latterSpacing": "-0.1px"
+                }
+              }
+            },
+            "shopButton": {
+              "backgroundColor": "#111827",
+              "textColor": "#ffffff",
+              "typography": {
+                "fontSize": {
+                  "desktop": 14,
+                  "tablet": 14,
+                  "mobile": 14
+                },
+                "fontWeight": "600",
+                "lineHeight": 1.4
+              },
+              "borderRadius": {
+                "desktop": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                },
+                "tablet": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                },
+                "mobile": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "12px",
+                  "right": "12px"
+                }
+              },
+              "padding": {
+                "desktop": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "24px",
+                  "right": "24px"
+                },
+                "tablet": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "24px",
+                  "right": "24px"
+                },
+                "mobile": {
+                  "top": "12px",
+                  "bottom": "12px",
+                  "left": "24px",
+                  "right": "24px"
+                }
+              }
+            }
+          },
+          "closeButton": {
+            "size": "40px",
+            "backgroundColor": "rgba(255, 255, 255, 0.1)",
+            "hoverBackgroundColor": "rgba(255, 255, 255, 0.2)",
+            "iconSize": "20px",
+            "iconColor": "#ffffff",
+            "borderRadius": {
+              "desktop": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              },
+              "tablet": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              },
+              "mobile": {
+                "top": "50%",
+                "bottom": "50%",
+                "left": "50%",
+                "right": "50%"
+              }
+            }
+          }
+        }
+      }
+    },
+    "options": {
+      "type": "object",
+      "default": {
+        "objectFit": "cover",
+        "autoPlay": true,
+        "loop": true,
+        "muted": true,
+        "currency_symbol": "$",
+        "openInNewTab": true
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": [
+    "file:../index.js",
+    "wp-api-fetch"
+  ],
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

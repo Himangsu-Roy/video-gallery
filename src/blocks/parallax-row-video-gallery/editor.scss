@@ -1,0 +1,73 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-vgblk-parallax-row-video-gallery {
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+  .pr_video-gallery {
+    fill: #fff !important;
+  }
+}
+
+// hint
+.block-hint,
+.block-warning {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  padding: 6px 0;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Hint style (💡) */
+.block-hint {
+  color: #136ef5;
+  background-color: rgba(19, 110, 245, 0.08);
+}
+
+/* Warning style (⚠️) */
+.block-warning {
+  color: #b23b00;
+  background-color: rgba(255, 180, 0, 0.15);
+}
+
+/* Add icons automatically */
+.block-hint::before,
+.block-warning::before {
+  margin-right: 0.4em;
+  font-size: 1.1em;
+}
+
+/* Icon content */
+.block-hint::before {
+  content: "💡";
+}
+
+.block-warning::before {
+  content: "⚠️";
+}
+
+/* Make inner <p> clean */
+.block-hint p,
+.block-warning p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}

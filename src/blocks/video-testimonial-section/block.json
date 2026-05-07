@@ -1,0 +1,494 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "vgblk/video-testimonial-section",
+  "version": "1.0.0",
+  "title": "Video Testimonial Section",
+  "category": "videoblocks",
+  "description": "A Video Testimonial Section features brief, authentic customer videos sharing positive experiences to build trust and engage visitors.",
+  "keywords": [
+    "video",
+    "testimonial",
+    "section",
+    "video testimonial section",
+    "video testimonial",
+    "testimonial section"
+  ],
+  "textdomain": "video-gallery",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "videos": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/16343663/",
+          "poster": "https://images.pexels.com/photos/16089235/pexels-photo-16089235.jpeg",
+          "title": "Title One",
+          "subtitle": "Subtitle One"
+        },
+        {
+          "id": 2,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/6520516/",
+          "poster": "https://images.pexels.com/photos/30750520/pexels-photo-30750520.jpeg",
+          "title": "Title Two",
+          "subtitle": "Subtitle Two"
+        },
+        {
+          "id": 3,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/16704982/",
+          "poster": "https://images.pexels.com/photos/29705626/pexels-photo-29705626.jpeg",
+          "title": "Title Three",
+          "subtitle": "Subtitle Three"
+        },
+        {
+          "id": 4,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/34394664/",
+          "poster": "https://images.pexels.com/photos/30234047/pexels-photo-30234047.jpeg",
+          "title": "Title Four",
+          "subtitle": "Subtitle Four"
+        },
+        {
+          "id": 5,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/13831201/",
+          "poster": "https://images.pexels.com/photos/35646001/pexels-photo-35646001.jpeg",
+          "title": "Title Five",
+          "subtitle": "Subtitle Five"
+        },
+        {
+          "id": 6,
+          "type": "hosted",
+          "video": "https://www.pexels.com/download/video/15215153",
+          "poster": "https://images.pexels.com/photos/7364559/pexels-photo-7364559.jpeg",
+          "title": "Title Six",
+          "subtitle": "Subtitle Six"
+        }
+      ]
+    },
+    "gallery": {
+      "type": "object",
+      "default": {
+        "container": {
+          "maxWidth": 1280
+        },
+        "background": {
+          "show": true,
+          "color": "#f9fafb"
+        },
+        "margin": {
+          "desktop": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "padding": {
+          "desktop": {
+            "top": "3rem",
+            "bottom": "3rem",
+            "left": "1rem",
+            "right": "1rem"
+          },
+          "tablet": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "1.5rem",
+            "right": "1.5rem"
+          },
+          "mobile": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "1rem",
+            "right": "1rem"
+          }
+        },
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 0,
+          "style": "solid"
+        },
+        "borderRadius": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          }
+        },
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "0px",
+            "blur": "0px",
+            "spreed": "0px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "columns": {
+          "desktop": 3,
+          "tablet": 2,
+          "mobile": 1
+        },
+        "columnGap": {
+          "desktop": 32,
+          "tablet": 15,
+          "mobile": 15
+        },
+        "rowGap": {
+          "desktop": 32,
+          "tablet": 15,
+          "mobile": 15
+        }
+      }
+    },
+    "items": {
+      "type": "object",
+      "default": {
+        "title": {
+          "show": true,
+          "color": "#000",
+          "typography": {
+            "fontSize": {
+              "desktop": 18,
+              "tablet": 18,
+              "mobile": 18
+            },
+            "fontWeight": "600",
+            "lineHeight": 1.75
+          },
+          "margin": {
+            "desktop": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            },
+            "tablet": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            },
+            "mobile": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            }
+          }
+        },
+        "subtitle": {
+          "show": true,
+          "color": "#4b5563",
+          "typography": {
+            "fontSize": {
+              "desktop": 16,
+              "tablet": 16,
+              "mobile": 16
+            },
+            "fontWeight": "400"
+          },
+          "margin": {
+            "desktop": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            },
+            "tablet": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            },
+            "mobile": {
+              "top": "0px",
+              "bottom": "0px",
+              "left": "0px",
+              "right": "0px"
+            }
+          }
+        },
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "4px",
+            "blur": "10px",
+            "spreed": "0px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "hoverShadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "20px",
+            "blur": "25px",
+            "spreed": "-5px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "background": {
+          "show": true,
+          "color": "#fff"
+        },
+        "overlay": "#00000066",
+        "bottomOverlay": "#000000cc",
+        "playBtnBg": "#ffffff33",
+        "playBtnBgHover": "#ffffff44",
+        "playIconColor": "#fff",
+        "playBtnSize": {
+          "desktop": "6rem",
+          "tablet": "6rem",
+          "mobile": "3rem"
+        },
+        "playBtnShow": true,
+        "playIconSize": {
+          "desktop": "3rem",
+          "tablet": "3rem",
+          "mobile": "1.5rem"
+        },
+        "playBtnBorderRadius": {
+          "top": "50%",
+          "right": "50%",
+          "left": "50%",
+          "bottom": "50%"
+        },
+        "playIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play icon play-adjusted\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg>",
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 1,
+          "style": "solid"
+        },
+        "borderRadius": {
+          "desktop": {
+            "top": "8px",
+            "right": "8px",
+            "left": "8px",
+            "bottom": "8px"
+          },
+          "tablet": {
+            "top": "8px",
+            "right": "8px",
+            "left": "8px",
+            "bottom": "8px"
+          },
+          "mobile": {
+            "top": "8px",
+            "right": "8px",
+            "left": "8px",
+            "bottom": "8px"
+          }
+        },
+        "controls": {
+          "color": "#fff",
+          "skipHoverColor": "#60a5fa",
+          "progressBar": {
+            "color": "#d1d5db",
+            "height": "4px",
+            "sliderThumb": {
+              "size": "16px",
+              "color": "#3b82f6",
+              "border": {
+                "show": false,
+                "color": "#000",
+                "width": 0,
+                "style": "solid"
+              },
+              "borderRadius": {
+                "top": "50%",
+                "right": "50%",
+                "left": "50%",
+                "bottom": "50%"
+              }
+            }
+          },
+          "overlayColor": "rgba(0, 0, 0, 0.8)",
+          "iconSize": {
+            "desktop": "20px",
+            "tablet": "20px",
+            "mobile": "20px"
+          },
+          "strokeWidth": {
+            "desktop": "2px",
+            "tablet": "2px",
+            "mobile": "2px"
+          },
+          "typography": {
+            "fontSize": {
+              "desktop": 14,
+              "tablet": 14,
+              "mobile": 14
+            },
+            "fontWeight": "400",
+            "lineHeight": 1.5
+          },
+          "gap": {
+            "desktop": "8px",
+            "tablet": "8px",
+            "mobile": "8px"
+          },
+          "playPauseBtn": {
+            "color": "#2563eb",
+            "hoverColor": "#1D4ED8",
+            "size": {
+              "desktop": "36px",
+              "tablet": "36px",
+              "mobile": "36px"
+            },
+            "border": {
+              "show": false,
+              "color": "#000",
+              "width": 0,
+              "style": "solid"
+            },
+            "borderRadius": {
+              "desktop": {
+                "top": "50%",
+                "right": "50%",
+                "left": "50%",
+                "bottom": "50%"
+              },
+              "tablet": {
+                "top": "50%",
+                "right": "50%",
+                "left": "50%",
+                "bottom": "50%"
+              },
+              "mobile": {
+                "top": "50%",
+                "right": "50%",
+                "left": "50%",
+                "bottom": "50%"
+              }
+            }
+          },
+          "padding": {
+            "desktop": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "tablet": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "mobile": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            }
+          }
+        },
+        "info": {
+          "padding": {
+            "desktop": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "tablet": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            },
+            "mobile": {
+              "top": "16px",
+              "bottom": "16px",
+              "left": "16px",
+              "right": "16px"
+            }
+          }
+        },
+        "padding": {
+          "desktop": {
+            "top": "2rem",
+            "bottom": "2rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "video": {
+          "objectFit": "cover",
+          "height": {
+            "desktop": 256,
+            "tablet": 256,
+            "mobile": 256
+          },
+          "skipSeconds": 10
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:../index.js",
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

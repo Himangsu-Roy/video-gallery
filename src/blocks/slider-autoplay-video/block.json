@@ -1,0 +1,382 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "vgblk/slider-autoplay-video",
+  "version": "1.0.0",
+  "title": "Slider Autoplay Video",
+  "category": "videoblocks",
+  "description": "Slider Autoplay Video is a responsive Swiper-based block that automatically plays videos in a horizontally scrollable slider with smooth transitions and autoplay functionality.",
+  "keywords": [
+    "Slider Autoplay Video",
+    "Slider",
+    "Autoplay",
+    "Video",
+    "Video Slider",
+    "Video Gallery"
+  ],
+  "textdomain": "video-gallery",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "header": {
+      "type": "object",
+      "default": { "show": true, "heading": "Title", "subHeading": "Subtitle" }
+    },
+    "videos": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Urban Challenge",
+          "subtitle": "August 2, 2025",
+          "datetime": "2025-08-02",
+          "video": "https://bato-web-agency.github.io/bato-shared/videos/video-slider/video1.mp4"
+        },
+        {
+          "title": "Urban Warrior",
+          "subtitle": "September 14–15, 2025",
+          "datetime": "2025-09-14",
+          "video": "https://bato-web-agency.github.io/bato-shared/videos/video-slider/video2.mp4"
+        },
+        {
+          "title": "Empowered Girls",
+          "subtitle": "October 12, 2025",
+          "datetime": "2025-10-12",
+          "video": "https://bato-web-agency.github.io/bato-shared/videos/video-slider/video3.mp4"
+        },
+        {
+          "title": "Power Girls Bootcamp",
+          "subtitle": "August 23–25, 2025",
+          "datetime": "2025-08-23",
+          "video": "https://bato-web-agency.github.io/bato-shared/videos/video-slider/video4.mp4"
+        },
+        {
+          "title": "Yoga Session",
+          "subtitle": "October 19, 2025",
+          "datetime": "2025-10-19",
+          "video": "https://bato-web-agency.github.io/bato-shared/videos/video-slider/video5.mp4"
+        }
+      ]
+    },
+    "gallery": {
+      "type": "object",
+      "default": {
+        "background": {
+          "show": true,
+          "color": "#000"
+        },
+        "margin": {
+          "desktop": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "0rem",
+            "bottom": "0rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "padding": {
+          "desktop": {
+            "top": "5rem",
+            "bottom": "5rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "5rem",
+            "bottom": "5rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "5rem",
+            "bottom": "5rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 0,
+          "style": "solid"
+        },
+        "borderRadius": {
+          "desktop": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "right": "0px",
+            "left": "0px",
+            "bottom": "0px"
+          }
+        },
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "0px",
+            "blur": "0px",
+            "spreed": "0px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "columnGap": {
+          "desktop": 90,
+          "tablet": 90,
+          "mobile": 40
+        },
+        "height": {
+          "desktop": "570px",
+          "tablet": "480px",
+          "mobile": "433px"
+        },
+        "maxWidth": {
+          "desktop": "1380px",
+          "tablet": "100%",
+          "mobile": "100%"
+        },
+        "arrow": {
+          "show": true,
+          "button": {
+            "backgroundColor": "#ffffff26",
+            "iconColor": "#fff"
+          },
+          "verticalPosition": {
+            "desktop": 5,
+            "tablet": 5,
+            "mobile": 5
+          },
+          "horizontalPosition": {
+            "desktop": 50,
+            "tablet": 50,
+            "mobile": 50
+          },
+          "gap": {
+            "desktop": 150,
+            "tablet": 100,
+            "mobile": 100
+          },
+          "btnSize": {
+            "desktop": "56px",
+            "tablet": "56px",
+            "mobile": "56px"
+          },
+          "btnBorderRadius": 50,
+          "border": {
+            "show": false,
+            "color": "#000",
+            "width": 0,
+            "style": "solid"
+          },
+          "iconSize": {
+            "desktop": "24px",
+            "tablet": "24px",
+            "mobile": "24px"
+          }
+        },
+        "initialVideoIndex": 2,
+        "autoplayDelay": 3000,
+        "loop": false,
+        "slideSpeed": 1000
+      }
+    },
+    "items": {
+      "type": "object",
+      "default": {
+        "info": {
+          "title": {
+            "show": true,
+            "color": "#fff",
+            "typography": {
+              "fontSize": {
+                "desktop": 32,
+                "tablet": 24,
+                "mobile": 24
+              },
+              "fontWeight": "400",
+              "lineHeight": 1.3
+            },
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "bottom": "8px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "bottom": "8px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "bottom": "8px",
+                "left": "0px",
+                "right": "0px"
+              }
+            }
+          },
+          "subtitle": {
+            "show": true,
+            "color": "#ffffffb3",
+            "typography": {
+              "fontSize": {
+                "desktop": 16,
+                "tablet": 16,
+                "mobile": 16
+              },
+              "fontWeight": "500",
+              "lineHeight": 1.3
+            },
+            "margin": {
+              "desktop": {
+                "top": "0px",
+                "bottom": "0px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "tablet": {
+                "top": "0px",
+                "bottom": "10px",
+                "left": "0px",
+                "right": "0px"
+              },
+              "mobile": {
+                "top": "0px",
+                "bottom": "10px",
+                "left": "0px",
+                "right": "0px"
+              }
+            }
+          }
+        },
+        "shadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "20px",
+            "blur": "25px",
+            "spreed": "-5px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "hoverShadow": [
+          {
+            "hOffset": "0px",
+            "vOffset": "20px",
+            "blur": "25px",
+            "spreed": "-5px",
+            "color": "rgba(0, 0, 0, 0.1)",
+            "isInset": false
+          }
+        ],
+        "overlayColor": "#a1199847",
+        "border": {
+          "show": false,
+          "color": "#000",
+          "width": 1,
+          "style": "solid"
+        },
+        "borderRadius": {
+          "desktop": {
+            "top": "10px",
+            "right": "10px",
+            "left": "10px",
+            "bottom": "10px"
+          },
+          "tablet": {
+            "top": "10px",
+            "right": "10px",
+            "left": "10px",
+            "bottom": "10px"
+          },
+          "mobile": {
+            "top": "10px",
+            "right": "10px",
+            "left": "10px",
+            "bottom": "10px"
+          }
+        },
+        "bgColor": "#fff",
+        "padding": {
+          "desktop": {
+            "top": "2rem",
+            "bottom": "2rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "tablet": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          },
+          "mobile": {
+            "top": "1rem",
+            "bottom": "1rem",
+            "left": "0rem",
+            "right": "0rem"
+          }
+        },
+        "video": {
+          "width": {
+            "desktop": "400px",
+            "tablet": "300px",
+            "mobile": "250px"
+          },
+          "height": {
+            "desktop": "480px",
+            "tablet": "400px",
+            "mobile": "350px"
+          }
+        },
+        "options": {
+          "lightbox": false,
+          "objectFit": "cover",
+          "autoplay": true,
+          "hoverPause": true,
+          "lazyload": true
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:../index.js",
+  "editorStyle": "file:../index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

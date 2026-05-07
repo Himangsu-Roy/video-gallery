@@ -1,0 +1,24 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-vts-video-testimonial-section {
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+  .video-testimonial-section {
+    fill: #fff !important;
+    stroke: #fff !important;
+  }
+}

@@ -1,0 +1,23 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-vgblk-slider-autoplay-video {
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+.components-button.components-autocomplete__result.block-editor-autocompleters__block.is-selected {
+  color: #fff;
+  .sav-gallery {
+    fill: #fff !important;
+  }
+}
